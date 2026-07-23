@@ -1,0 +1,5 @@
+# This directory is a Syncthing folder marker.
+# Do not delete.
+
+folderID: klcub-2dnrx
+created: 2026-07-23T09:41:07-05:00
