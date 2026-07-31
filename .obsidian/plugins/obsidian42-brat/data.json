@@ -20,5 +20,5 @@
   "globalTokenName": "",
   "personalAccessToken": "",
   "selectLatestPluginVersionByDefault": false,
-  "allowIncompatiblePlugins": true
+  "allowIncompatiblePlugins": false
 }

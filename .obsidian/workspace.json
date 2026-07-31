@@ -1,33 +1,19 @@
 {
   "main": {
-    "id": "361413eb1be3ae16",
+    "id": "dbbdb1f1b8360e4f",
     "type": "split",
     "children": [
       {
-        "id": "e75cd83c36e4cf3e",
+        "id": "3f6195c1eec6be2e",
         "type": "tabs",
         "children": [
           {
-            "id": "b9f00cf740878b41",
+            "id": "71af244d33d33d2a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "essays.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "essays"
-            }
-          },
-          {
-            "id": "d5108a3bf6429622",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "essays.md",
+                "file": "text/essays.md",
                 "mode": "source",
                 "source": false
               },
@@ -35,22 +21,21 @@
               "title": "essays"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "a32d62042d140dee",
+    "id": "cb532d17fc9486a1",
     "type": "split",
     "children": [
       {
-        "id": "980f503d2f82e9f0",
+        "id": "f680c8dee1d4913f",
         "type": "tabs",
         "children": [
           {
-            "id": "4fb49173c1796f67",
+            "id": "627e20b63c3beeac",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -63,7 +48,7 @@
             }
           },
           {
-            "id": "351350b512fcb301",
+            "id": "e93f56fcd88b6344",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -80,7 +65,7 @@
             }
           },
           {
-            "id": "b1d6b6053467f6d2",
+            "id": "dd72196518757b69",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -89,28 +74,27 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
     "width": 300
   },
   "right": {
-    "id": "23c032f5fff74beb",
+    "id": "0951b70d3f4466da",
     "type": "split",
     "children": [
       {
-        "id": "da1c719ed310565a",
+        "id": "991e38357403e52f",
         "type": "tabs",
         "children": [
           {
-            "id": "16a3b05999c4df00",
+            "id": "b91d4b5a11d9ce0f",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "essays.md",
+                "file": "text/essays.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,12 +108,12 @@
             }
           },
           {
-            "id": "24903c27f6a6a633",
+            "id": "fc857e830c0bf63f",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "essays.md",
+                "file": "text/essays.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -138,7 +122,7 @@
             }
           },
           {
-            "id": "437a812394660c12",
+            "id": "dfed09ddb3e84cac",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -153,7 +137,7 @@
             }
           },
           {
-            "id": "d3cbfd70a1c26fec",
+            "id": "a42a04633ded7f5d",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -167,12 +151,12 @@
             }
           },
           {
-            "id": "657a9566f042c3e9",
+            "id": "f7b3ffacceef7f12",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "essays.md",
+                "file": "text/essays.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -190,7 +174,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian42-brat:BRAT": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -200,9 +183,6 @@
       "bases:Create new base": false
     }
   },
-  "active": "351350b512fcb301",
-  "lastOpenFiles": [
-    "Writing ideas.md",
-    "essays.md"
-  ]
+  "active": "71af244d33d33d2a",
+  "lastOpenFiles": []
 }
