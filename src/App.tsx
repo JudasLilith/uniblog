@@ -65,6 +65,25 @@ I was able to learn the
         <h1>Essay Blog</h1>
       </div>
 
+      <div className='flexBoxContainer'>
+        <div className='card'>Project 1
+          <p>A 3D printed Crossbow</p>
+        </div>
+        <div className='card'>Project 2
+          <p>A custom PCB Businesscard with NFC tags</p>
+        </div>
+        <div className='card'>Project 3
+          <p>An arduino-Uno based MP3 player</p>
+        </div>
+        <div className='card'>
+          <p>ESP32-controlled Home Assistant Power manager</p>
+        </div>
+        <div className='card'>
+          <p>A voltage multiplier circuit made with a 555 timer</p>
+        </div>
+
+      </div>
+
 
 
       <div className="mdDocument">
@@ -76,7 +95,7 @@ I was able to learn the
 
 
 
-
+      <div className='glow-circle'></div>
 
 
 

@@ -1,8 +1,40 @@
 .App {
   text-align: center;
-  background-color: black;
+  background-color: grey;
 
 }
+
+
+p {
+  color: white;
+  font-size: 1.2rem;
+}
+
+li {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.mdDocument {
+  color: white;
+}
+
+.flexBoxContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 8px 12px;
+  flex: 1;
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -26,6 +58,10 @@
   color: white;
 }
 
+.PageTitle {
+  font-size: 15px;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -37,4 +73,25 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.glow-circle {
+  width: 50rem;
+  height: 50rem;
+  border: 1rem solid #000000;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 50%, #ffffff, #e8e8e8 100%, #cfcfcf 200%);
+
+  animation: pulse-glow 5.2s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow:
+      0 0 1px 1px rgba(255, 255, 255, 0.8),
+      0 0 1px 1px rgba(255, 255, 255, 0.5),
+      0 0 1px 1px rgba(255, 255, 255, 0.25);
+    transform: scale(1);
+  }
+
 }
