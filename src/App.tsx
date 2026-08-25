@@ -3,6 +3,7 @@ import logo from './logo.jpg';
 import './App.css';
 import ReactMarkdown from "react-markdown";
 
+
 function App() {
 
   const markdowntext = `
@@ -22,13 +23,6 @@ This is a [link](https://github.com/remarkjs/react-markdown)
 `;
 
 
-  const IdentityEssay = `
-
-
-
-
-
-`;
 
 
 
@@ -45,6 +39,7 @@ I was able to learn the
 
 `;
 
+  const rollingBannerTextVar = 'This is my rifle - this is my gun, this one\'s for fighting; this one\'s for fun!'
 
 
 
@@ -52,27 +47,45 @@ I was able to learn the
   return (
     <div className="App">
 
-      <title>JudasLilith</title>
+
+      <div className='rollingBannerContainer'>
+        <div className='rollingBanner'>
+          {[...Array(5)].map((_, i) => (
+            <div key={i} className='rollingBannerText'>{rollingBannerTextVar}</div>
+          ))}
+        </div>
+      </div>
+
 
 
       <div className="TabTitle">
-        <title>essay blog</title>
-        <p><i>This is my rifle - this is my gun, this one's for fighting; this one's for fun!</i></p>
+        <title></title>
 
       </div>
 
       <div className="PageTitle">
-        <h1>Essay Blog</h1>
+        <h1 id="PageTitleText">Essay Blog</h1>
       </div>
 
+
+
+
+
+
+
+
+
+
+
+
       <div className='flexBoxContainer'>
-        <div className='card'>Project 1
+        <div className='card'>
           <p>A 3D printed Crossbow</p>
         </div>
-        <div className='card'>Project 2
+        <div className='card'>
           <p>A custom PCB Businesscard with NFC tags</p>
         </div>
-        <div className='card'>Project 3
+        <div className='card'>
           <p>An arduino-Uno based MP3 player</p>
         </div>
         <div className='card'>
@@ -80,6 +93,12 @@ I was able to learn the
         </div>
         <div className='card'>
           <p>A voltage multiplier circuit made with a 555 timer</p>
+        </div>
+        <div className='card'>
+          <p>Pac-Blood</p>
+        </div>
+        <div className='card'>
+          <p>Electric wheelchair with facial recognition</p>
         </div>
 
       </div>
@@ -96,6 +115,8 @@ I was able to learn the
 
 
       <div className='glow-circle'></div>
+
+
 
 
 
@@ -130,10 +151,12 @@ I was able to learn the
           target="_blank"
           rel="noopener noreferrer"
         >
-          my other website:
+          my other websites:
         </a>
 
-
+        <div className="aboutMe">
+          <p>support me: bitcoin:bc1q69zpxuv8qqynpf94qf4n45td9jn7s46elk9ut9?amount=0.001&message=fromBlog</p>
+        </div>
 
 
 

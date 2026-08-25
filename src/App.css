@@ -4,8 +4,15 @@
 
 }
 
+#PageTitleText {
+  font-size: 100px;
+  font-family: 'BlackMustang'; 
+} 
+
+
 
 p {
+  font-family: LongShot;
   color: white;
   font-size: 1.2rem;
 }
@@ -24,17 +31,53 @@ li {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 20%;
+  gap: 16px;
   flex-wrap: wrap;
 }
 
 .card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+
   border: 1px solid #333;
   border-radius: 6px;
   padding: 8px 12px;
-  flex: 1;
+  min-width: 0;
+  flex: 0 1 200px;
+  height: 300px;
 }
 
+.cardImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: translateY(0);
+  transition: transform 0.5s ease;
+}
+
+.cardText {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: #333;
+  color: white;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateY(100%); /* Starts below */
+  transition: transform 0.5s ease;
+}
+.card:hover .cardImage {
+  transform: translateY(-100%); /* Slides up and out */
+}
+
+.card:hover .cardText {
+  transform: translateY(0); /* Slides up and in */
+}
 
 .App-logo {
   height: 40vmin;
@@ -48,14 +91,12 @@ li {
 }
 
 .App-header {
-  background-color: #000000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .PageTitle {
@@ -95,3 +136,97 @@ li {
   }
 
 }
+
+
+.rollingBannerContainer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #171717;
+  border-top: 1px solid #262626;
+  border-bottom: 1px solid #262626;
+  align-items: center;
+
+}
+
+.rollingBanner {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  gap: 48px;
+  padding: 12px 0;
+  animation: rolling-banner-right 15s linear infinite;
+}
+
+
+.rollingBannerText {
+  font-family: BlackMustang;
+  flex-shrink: 0;
+  font-size: 50px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  color: #e5e5e5;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+
+@keyframes rolling-banner-right {
+  from { transform: translateX(0%); }
+  to   { transform: translateX(-50%); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+  font-family: 'BlackMustang';
+  src: url('../public/fonts/Black Mustang.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* avoids invisible text while font loads */
+}
+
+@font-face {
+  font-family: 'KingThings';
+  src: url('../public/fonts/Kingthings Spike.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* avoids invisible text while font loads */
+}
+
+@font-face {
+  font-family: 'LongShot';
+  src: url('../public/fonts/Long_Shot.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* avoids invisible text while font loads */
+}
+
+@font-face {
+  font-family: 'OldLondon';
+  src: url('../public/fonts/OldLondon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* avoids invisible text while font loads */
+}
+
+
+
+
