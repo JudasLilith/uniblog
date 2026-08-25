@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "text/UCB.md",
+                "file": "text/College Essay fallout.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "UCB"
+              "title": "College Essay fallout"
             }
           }
         ],
@@ -217,9 +217,9 @@
   },
   "active": "fa34505ecce64d91",
   "lastOpenFiles": [
-    "text/College Essay fallout.md",
     "text/essays.md",
     "text/UCB.md",
+    "text/College Essay fallout.md",
     "text/notes/ACT/ACT Science(New3)",
     "text/notes/misc/Spency",
     "text/notes/ACT/ACT Science(New1)",
