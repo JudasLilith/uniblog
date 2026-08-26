@@ -1,5 +1,5 @@
 
-ax limit: 650
+Max limit: 650
 Min limit: 250
 
 ==Some students have a background, identity, interest, or talent that is so meaningful they believe their application would be incomplete without it. If this sounds like you, then please share your story.

@@ -3,6 +3,18 @@ import logo from './logo.jpg';
 import './App.css';
 import ReactMarkdown from "react-markdown";
 
+function randomInt(max: number): number {
+  return Math.floor(Math.random() * max);
+}
+
+
+function groundGenerator() {
+  const circleNumber = randomInt(3) + 1;
+
+
+
+}
+
 
 function App() {
 
@@ -64,7 +76,7 @@ I was able to learn the
       </div>
 
       <div className="PageTitle">
-        <h1 id="PageTitleText">Essay Blog</h1>
+        <h1 id="PageTitleText">Howdy there!</h1>
       </div>
 
 
@@ -100,7 +112,18 @@ I was able to learn the
         <div className='card'>
           <p>Electric wheelchair with facial recognition</p>
         </div>
-
+        <div className='card'>
+          <p>full electronics workbench</p>
+        </div>
+        <div className='card'>
+          <p>Refurbished Brother AX350 electric typewriter </p>
+        </div>
+        <div className='card'>
+          <p>Go-Kart motor with throttle</p>
+        </div>
+        <div className='card'>
+          <p>CLI tool for checking 3d Printer connection</p>
+        </div>
       </div>
 
 
@@ -156,6 +179,9 @@ I was able to learn the
 
         <div className="aboutMe">
           <p>support me: bitcoin:bc1q69zpxuv8qqynpf94qf4n45td9jn7s46elk9ut9?amount=0.001&message=fromBlog</p>
+        </div>
+
+        <div className="circle">
         </div>
 
 
