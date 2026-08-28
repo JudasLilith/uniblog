@@ -140,6 +140,9 @@ I was able to learn the
       <div className='glow-circle'></div>
 
 
+      <div className='box'></div>
+
+      <div className="bar"></div>
 
 
 

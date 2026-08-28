@@ -1,6 +1,7 @@
 .App {
   text-align: center;
-  background-color: grey;
+  background-color: red;
+  z-index: -2;
 
 }
 
@@ -11,7 +12,7 @@
 
 
 div {
-  z-index: 1;
+
 }
 
 p {
@@ -42,14 +43,15 @@ li {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-
+  background-color: grey;
 
   border: 1px solid #333;
-  border-radius: 6px;
+  border-radius: 3px;
   padding: 8px 12px;
   min-width: 0;
   flex: 0 1 200px;
   height: 300px;
+  z-index: 1;
 }
 
 .cardImage {
@@ -58,6 +60,7 @@ li {
   height: 100%;
   transform: translateY(0);
   transition: transform 0.5s ease;
+  z-index: 1;
 }
 
 .cardText {
@@ -129,6 +132,18 @@ li {
   animation: pulse-glow 5.2s ease-in-out infinite;
 }
 
+
+.box {
+  width: 400px;
+  height: 25px;
+  rotate: -45deg;
+  position: fixed;
+  top: 300px;
+  left: -100px;
+  background: blue;
+}
+
+
 .circle {
   overflow: hidden;
   left: 0;
@@ -139,10 +154,10 @@ li {
   bottom: 100px;
   width: 200vw;
   height: 200vw;
-  background-color: rgb(0, 0, 0);
+  background-color: white;
   border-radius: 100%;
   border: 5px solid black;
-  z-index: -1;
+  z-index: 0;
 
   margin-bottom: -180vw;
   animation: fade-up 5s;
@@ -168,9 +183,9 @@ li {
   position: relative;
   width: 100%;
   overflow: hidden;
-  background-color: #171717;
-  border-top: 1px solid #262626;
-  border-bottom: 1px solid #262626;
+  background-color: black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
   align-items: center;
 
 }
@@ -191,7 +206,7 @@ li {
   font-size: 50px;
   font-weight: 500;
   letter-spacing: 0.2em;
-  color: #e5e5e5;
+  color: white;
   white-space: nowrap;
   line-height: 1;
 }
