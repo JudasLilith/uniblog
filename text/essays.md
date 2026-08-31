@@ -4,7 +4,6 @@ Min limit: 250
 
 ==Some students have a background, identity, interest, or talent that is so meaningful they believe their application would be incomplete without it. If this sounds like you, then please share your story.
  
- I have been called a nerd in my life more than there are stars in the sky. And to be fair, they are correct; I have an entire workshop in my garage for me to tinker and spin up some shenanigans. I am in no way, insulted by this. I take pride in my hobbies, and the struggles that I grew from the experience.
  When I got my first 3d printer for christmans, it was a transformative experience to me. I got into so many different  modelling softwares, like Autodesk inventor, 
 
 

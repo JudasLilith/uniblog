@@ -92,6 +92,10 @@ I was able to learn the
 
       <div className='flexBoxContainer'>
         <div className='card'>
+          <div className="card-inner">
+            <div className="card-front">Front Side</div>
+            <div className="card-back">Back Side</div>
+          </div>
           <p>A 3D printed Crossbow</p>
         </div>
         <div className='card'>
@@ -180,9 +184,6 @@ I was able to learn the
           my other websites:
         </a>
 
-        <div className="aboutMe">
-          <p>support me: bitcoin:bc1q69zpxuv8qqynpf94qf4n45td9jn7s46elk9ut9?amount=0.001&message=fromBlog</p>
-        </div>
 
         <div className="circle">
         </div>
