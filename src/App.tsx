@@ -51,8 +51,11 @@ I was able to learn the
 
 `;
 
-  const rollingBannerTextVar = 'This is my rifle - this is my gun, this one\'s for fighting; this one\'s for fun!'
+  const rollingBannerTextVar = 'life is like a box of chocolates; you never know what you\'re going to get; ';
 
+  /*
+      'This is my rifle - this is my gun, this one\'s for fighting; this one\'s for fun!'
+  */
 
 
 
