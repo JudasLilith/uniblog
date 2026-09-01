@@ -93,10 +93,9 @@ I was able to learn the
       <div className='flexBoxContainer'>
         <div className='card'>
           <div className="card-inner">
-            <div className="card-front">Front Side</div>
-            <div className="card-back">Back Side</div>
+            <div className="card-front">Front Side can I not say anything</div>
+            <div className="card-back">Back Side sonion the fuck is happening</div>
           </div>
-          <p>A 3D printed Crossbow</p>
         </div>
         <div className='card'>
           <p>A custom PCB Businesscard with NFC tags</p>
