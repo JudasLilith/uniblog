@@ -1,61 +1,86 @@
 import React from 'react';
-import logo from './logo.jpg';
+import { useState } from "react";
+
 import './App.css';
 import ReactMarkdown from "react-markdown";
+
+import { useNavigate } from 'react-router-dom';
+
 
 function randomInt(max: number): number {
   return Math.floor(Math.random() * max);
 }
 
 
+
+function Goto(place: string,) {
+  const navigate = useNavigate();
+  navigate(place);
+}
+
+function cards() {
+  return (
+    <>
+      <div className='card'>
+        <p>A custom PCB Businesscard with NFC tags</p>
+        <img src='./assets/image/IMG_7012.JPG'></img>
+      </div>
+      <div className='card'>
+        <p>An arduino-Uno based MP3 player</p>
+      </div>
+      <div className='card'>
+        <p>ESP32-controlled Home Assistant Power manager</p>
+      </div>
+      <div className='card'>
+        <p>A voltage multiplier circuit made with a 555 timer</p>
+      </div>
+      <div className='card'>
+        <p>Pac-Blood</p>
+      </div>
+      <div className='card'>
+        <p>Electric wheelchair with facial recognition</p>
+      </div>
+      <div className='card'>
+        <p>full electronics workbench</p>
+      </div>
+      <div className='card'>
+        <p>Refurbished Brother AX350 electric typewriter </p>
+      </div>
+      <div className='card'>
+        <p>Go-Kart motor with throttle</p>
+      </div>
+      <div className='card'>
+        <p>CLI tool for checking 3d Printer connection</p>
+      </div>
+    </>
+  );
+}
+
+
+
 function groundGenerator() {
   const circleNumber = randomInt(3) + 1;
-
-
-
 }
 
 
 function App() {
 
-  const markdowntext = `
-## React Markdown Example
-
-- Some text
-- Some other text
-
-## Subtitle
-
-### Additional info
-
-This is a [link](https://github.com/remarkjs/react-markdown)
-
-
-
-`;
-
-
-
-
-
-  const ChallengeEssay = `
-
-## ==The lessons we take from obstacles we encounter can be fundamental to later success. 
-Recount a time when you faced a challenge, setback, or failure. 
-How did it affect you, and what did you learn 
-from the experience?
-
-I was able to learn the 
-
-
-
-`;
 
   const rollingBannerTextVar = 'life is like a box of chocolates; you never know what you\'re going to get; ';
-
   /*
       'This is my rifle - this is my gun, this one\'s for fighting; this one\'s for fun!'
   */
+
+  const [ProjectVisibility, setProjectVisibility] = useState(false);
+
+  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.stopPropagation();
+    setProjectVisibility(true);
+  }
+  const handleClose = () => {
+    setProjectVisibility(false);
+  };
+
 
 
 
@@ -86,59 +111,13 @@ I was able to learn the
 
 
 
-
-
-
-
-
-
-
       <div className='flexBoxContainer'>
-        <div className='card'>
-
-        </div>
-        <div className='card'>
-          <p>A custom PCB Businesscard with NFC tags</p>
-        </div>
-        <div className='card'>
-          <p>An arduino-Uno based MP3 player</p>
-        </div>
-        <div className='card'>
-          <p>ESP32-controlled Home Assistant Power manager</p>
-        </div>
-        <div className='card'>
-          <p>A voltage multiplier circuit made with a 555 timer</p>
-        </div>
-        <div className='card'>
-          <p>Pac-Blood</p>
-        </div>
-        <div className='card'>
-          <p>Electric wheelchair with facial recognition</p>
-        </div>
-        <div className='card'>
-          <p>full electronics workbench</p>
-        </div>
-        <div className='card'>
-          <p>Refurbished Brother AX350 electric typewriter </p>
-        </div>
-        <div className='card'>
-          <p>Go-Kart motor with throttle</p>
-        </div>
-        <div className='card'>
-          <p>CLI tool for checking 3d Printer connection</p>
-        </div>
+        {ProjectVisibility && cards()}
+        <button onClick={handleClose}>Close</button>
       </div>
 
 
-
-      <div className="mdDocument">
-        <section>
-          <ReactMarkdown>{markdowntext}</ReactMarkdown>
-        </section>
-        <ReactMarkdown>{ChallengeEssay}</ReactMarkdown>
-      </div>
-
-
+      <button onClick={handleClick}>show dialog box</button>
 
       <div className='glow-circle'></div>
 
@@ -150,28 +129,8 @@ I was able to learn the
 
 
 
-      <header className="App-hes">
-        <img src={logo} className="App-logo" alt="logo" />
-
-
-
-
-
-
-
-
-      </header>
-
       <div className="bottom">
-        <p>About me:</p>
-        <p> I am an Engineering Student from Texas. My hobbies are 3D printing, Vanilla Web Dev, Video game creation(Godot and Unity), CNC & milling, and much more:</p>
-        <li>Gardening(especially herbs)</li>
-        <li>Computer Designing(OnShape, FreeCad, Inventor, and Fusion360)</li>
-        <li>Blacksmithing(Ringmaking & knifemaking)</li>
-        <li>Linux Ricing(Hyprland)</li>
-        <li>Hobby CNCing</li>
-        <li>Hobby Machine Milling</li>
-        <li>ESP32, Arduinos, and Raspberry Pis</li>
+
 
 
         <a
@@ -197,7 +156,8 @@ I was able to learn the
 
 
     </div>
+
   );
-}
+} //app ending 
 
 export default App;
