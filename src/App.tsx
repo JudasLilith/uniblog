@@ -96,6 +96,8 @@ function App() {
         </div>
       </div>
 
+      <div className='glow-circle'></div>
+
 
 
       <div className="TabTitle">
@@ -118,8 +120,6 @@ function App() {
 
 
       <button onClick={handleClick}>show dialog box</button>
-
-      <div className='glow-circle'></div>
 
 
       <div className='box'></div>

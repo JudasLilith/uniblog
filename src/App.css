@@ -5,6 +5,11 @@
 
 }
 
+html, body {
+  background: red;
+}
+
+
 #PageTitleText {
   -webkit-text-stroke:2px black;
   paint-order: stroke fill;
@@ -138,13 +143,21 @@ li {
 }
 
 .glow-circle {
-  width: 50rem;
-  height: 50rem;
+  position: fixed;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);  width: 5rem;
+  height: 30vw;
+  width: 30vw;
   border: 1rem solid #000000;
   border-radius: 50%;
-  background: radial-gradient(circle at 50% 50%, #ffffff, #e8e8e8 100%, #cfcfcf 200%);
+  background: white;
 
-  animation: pulse-glow 5.2s ease-in-out infinite;
+
+  align-items: center;
+  text-align: center;
+  z-index: -1;
+
+
 }
 
 .aboutMe {
@@ -178,7 +191,7 @@ li {
   bottom: 100px;
   width: 200vw;
   height: 200vw;
-  background-color: black;
+  background: black;
   border-radius: 100%;
   border: 5px solid black;
   z-index: -1;
