@@ -5,9 +5,19 @@
 
 }
 
+html {
+	overflow: hidden;
+}
+
+
+
 html, body {
   background: red;
+	padding: 0px;
+	margin: 0px;
+
 }
+
 
 
 #PageTitleText {
@@ -24,9 +34,7 @@ h1 {
 }
 
 
-div {
 
-}
 
 p {
   font-family: LongShot;
@@ -38,6 +46,83 @@ li {
   color: white;
   font-size: 1.2rem;
 }
+
+
+button {
+  font-family: KingThings;
+  border: 12px solid #333;
+  overflow: hidden;
+  z-index: 2;
+}
+
+
+
+
+div.parallax {
+	width: 100vw;
+	height: 580px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: -40px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: -1;
+	content: "";
+	transform: translateZ(-1px) scale(2);
+}
+
+div.content {
+	display: grid;
+	grid: auto / 1fr min(50ch, calc(100% - 64px)) 1fr;
+	background-color: white;
+	perspective: 2px;
+	padding: 2rem 0;
+}
+/* Tell all children of the grid to populate column 2 */
+.content > * {
+  grid-column: 2;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+	perspective: 1px;
+	-webkit-perspective: 1px;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+}
+
+/* remove all horizontal and vertical scrolling from the page for the effect to work correctly */
+
+
+html, body {
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 16pt;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .mdDocument {
   color: white;
@@ -144,10 +229,10 @@ li {
 
 .glow-circle {
   position: fixed;
-  inset: 50% auto auto 50%;
+  inset: 30% auto auto 50%;
   transform: translate(-50%, -50%);  width: 5rem;
-  height: 30vw;
-  width: 30vw;
+  height: 40vw;
+  width: 40vw;
   border: 1rem solid #000000;
   border-radius: 50%;
   background: white;
@@ -155,7 +240,7 @@ li {
 
   align-items: center;
   text-align: center;
-  z-index: -1;
+  z-index: 0-1;
 
 
 }
@@ -167,13 +252,14 @@ li {
 
 
 .box {
-  width: 75%;
+  width: 60%;
   height: 5%;
   rotate: -25deg;
   position: fixed;
-  top: 300px;
+  top: 600px;
   left: -90px;
   background: black;
+  z-index: 1;
 }
 
 @animation boxSlide{
@@ -188,7 +274,7 @@ li {
   align-items: center;
   text-align: center;
   position: fixed;
-  bottom: 100px;
+  bottom: 50px;
   width: 200vw;
   height: 200vw;
   background: black;
@@ -225,7 +311,7 @@ li {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   align-items: center;
-
+  z-index: 2;
 }
 
 .rollingBanner {
