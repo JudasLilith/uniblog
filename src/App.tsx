@@ -83,7 +83,7 @@ function App() {
   return (
     <div className="App">
 
-/*
+
       <div className='rollingBannerContainer'>
         <div className='rollingBanner'>
           {[...Array(5)].map((_, i) => (
@@ -92,13 +92,13 @@ function App() {
         </div>
       </div>
 
-      L
 
       <div className="parallax">
         <div className='glow-circle'></div>
       </div>
 
-      <div className="content">
+      
+      L<div className="content">
         <article>
           <p>Asian music covers a vast swath of music cultures surveyed in the articles on Arabia, Central Asia, East Asia, South Asia, and Southeast Asia. Several have traditions reaching into antiquity.</p>
           <p>Chinese classical music, the traditional art or court music of China, has a history stretching over around three thousand years. It has its own unique systems of musical notation, as well as musical tuning and pitch, musical instruments and styles or musical genres. Chinese music is pentatonic-diatonic, having a scale of twelve notes to an octave (5 + 7 = 12) as does European-influenced music.</p>
@@ -107,20 +107,16 @@ function App() {
         <article>
           <p>Asian music covers a vast swath of music cultures surveyed in the articles on Arabia, Central Asia, East Asia, South Asia, and Southeast Asia. Several have traditions reaching into antiquity.</p>
         </article>
-      </div>
-
-
-      <div className="TabTitle">
-        <title></title>
-
-      </div>
-
-      <div className="PageTitle">
-        <h1 id="PageTitleText">Howdy there!</h1>
-      </div>
 
 
 
+        <div className="TabTitle">
+          <title>something</title>
+        </div>
+
+        <div className="PageTitle">
+          <h1 id="PageTitleText">Howdy there!</h1>
+        </div>
 
 
       <div className='flexBoxContainer'>
@@ -135,37 +131,21 @@ function App() {
 
 
 
-      <div className='box'></div>
-
-      <div className="bar"></div>
-
-
 
 
       <div className="bottom">
-
-
-
-        <a
-          className="App-link"
-          href="https://judaslilith.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          my other websites:
-        </a>
+        <a className="App-link" href="https://judaslilith.com" target="_blank" rel="noopener noreferrer">my other websites:</a>
 
 
         <div className="circle">
         </div>
 
-
+      </div>
 
 
 
       </div>
 
-i
 
 
 
