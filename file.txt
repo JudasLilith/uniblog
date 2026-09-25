@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'BlackMustang';
+  src: url('../public/fonts/Black Mustang.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* avoids invisible text while font loads */
+
+/*
+@font-face {
+  font-family: 'KingThings';
+  src: url('../public/fonts/Kingthings Spike.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* avoids invisible text while font loads */
+}
+/*
+@font-face {
+  font-family: 'LongShot';
+  src: url('../public/fonts/Long_Shot.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* avoids invisible text while font loads */
+}
+/*
+@font-face {
+  font-family: 'OldLondon';
+  src: url('../public/fonts/OldLondon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* avoids invisible text while font loads */
+}

@@ -70,7 +70,7 @@ div.parallax {
 	left: 0px;
 	right: 0px;
 	bottom: 0px;
-	z-index: -1;
+	z-index: 1;
 	content: "";
 	transform: translateZ(-1px) scale(2);
 }
@@ -81,6 +81,7 @@ div.content {
 	background-color: white;
 	perspective: 2px;
 	padding: 2rem 0;
+  z-index: 2
 }
 /* Tell all children of the grid to populate column 2 */
 .content > * {
@@ -107,16 +108,6 @@ html, body {
 	font-family: 'Helvetica Neue', sans-serif;
 	font-size: 16pt;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -211,7 +202,7 @@ html, body {
 
 .PageTitle {
   font-size: 15px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .App-link {
@@ -240,7 +231,7 @@ html, body {
 
   align-items: center;
   text-align: center;
-  z-index: 0-1;
+
 
 
 }
@@ -273,7 +264,7 @@ html, body {
   transform: translateX(-25%);
   align-items: center;
   text-align: center;
-  position: fixed;
+
   bottom: 50px;
   width: 200vw;
   height: 200vw;
@@ -358,7 +349,7 @@ html, body {
 
 
 
-
+*/
 
 
 
