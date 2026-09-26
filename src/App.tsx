@@ -97,8 +97,8 @@ function App() {
         <div className='glow-circle'></div>
       </div>
 
-      
-      L<div className="content">
+
+      <div className="content">
         <article>
           <p>Asian music covers a vast swath of music cultures surveyed in the articles on Arabia, Central Asia, East Asia, South Asia, and Southeast Asia. Several have traditions reaching into antiquity.</p>
           <p>Chinese classical music, the traditional art or court music of China, has a history stretching over around three thousand years. It has its own unique systems of musical notation, as well as musical tuning and pitch, musical instruments and styles or musical genres. Chinese music is pentatonic-diatonic, having a scale of twelve notes to an octave (5 + 7 = 12) as does European-influenced music.</p>
@@ -119,28 +119,28 @@ function App() {
         </div>
 
 
-      <div className='flexBoxContainer'>
-        {ProjectVisibility && cards()}
+        <div className='flexBoxContainer'>
+          {ProjectVisibility && cards()}
 
-        <button onClick={handleClick}>show dialog box
-          <img src="./assets/image/IMG_7525.JPG"></img>
-        </button>
-      </div>
-
-
-
-
-
-
-
-      <div className="bottom">
-        <a className="App-link" href="https://judaslilith.com" target="_blank" rel="noopener noreferrer">my other websites:</a>
-
-
-        <div className="circle">
+          <button onClick={handleClick}>show dialog box
+            <img src="./assets/image/IMG_7525.JPG"></img>
+          </button>
         </div>
 
-      </div>
+
+
+
+
+
+
+        <div className="bottom">
+          <a className="App-link" href="https://judaslilith.com" target="_blank" rel="noopener noreferrer">my other websites:</a>
+
+
+          <div className="circle">
+          </div>
+
+        </div>
 
 
 
