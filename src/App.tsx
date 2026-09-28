@@ -9,16 +9,8 @@ import './App.css';
 import { useNavigate } from 'react-router-dom';
 
 
-function randomInt(max: number): number {
-  return Math.floor(Math.random() * max);
-}
 
 
-
-function Goto(place: string,) {
-  const navigate = useNavigate();
-  navigate(place);
-}
 
 function cards() {
   return (
@@ -60,11 +52,6 @@ function cards() {
 
 
 
-function groundGenerator() {
-  const circleNumber = randomInt(3) + 1;
-}
-
-
 function App() {
 
 
@@ -84,7 +71,7 @@ function App() {
 
   return (
     <div className="App">
-      <img src='/image/mods1.JPG' alt="descriptions" />
+      <img src='/uniblog/testing.jpg' alt="descriptions" />
 
       <div className='rollingBannerContainer'>
         <div className='rollingBanner'>
@@ -95,7 +82,7 @@ function App() {
       </div>
       <Parallax bgImage="/src/assets/image/mods1.JPG" strength={500}>
         Content here should I be adding somethin
-        <image href="/src/assets/image/mods2.jpg"></image>
+        <img src="/src/assets/image/mods2.jpg"></img>
       </Parallax>
 
 
