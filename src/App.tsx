@@ -1,8 +1,10 @@
 import React from 'react';
 import { useState } from "react";
+import { Parallax } from 'react-parallax';
+import example from './Fuji_apple.jpg';
 
 import './App.css';
-import ReactMarkdown from "react-markdown";
+
 
 import { useNavigate } from 'react-router-dom';
 
@@ -23,7 +25,7 @@ function cards() {
     <>
       <div className='card'>
         <p>A custom PCB Businesscard with NFC tags</p>
-        <img src='./assets/image/IMG_7012.JPG'></img>
+        <img src='./assets/image/IMG_7012.JPG' style={{ width: '200px', height: '200px', objectFit: 'cover' }}></img>
       </div>
       <div className='card'>
         <p>An arduino-Uno based MP3 player</p>
@@ -82,7 +84,7 @@ function App() {
 
   return (
     <div className="App">
-
+      <img src='/image/mods1.JPG' alt="descriptions" />
 
       <div className='rollingBannerContainer'>
         <div className='rollingBanner'>
@@ -91,6 +93,13 @@ function App() {
           ))}
         </div>
       </div>
+      <Parallax bgImage="/src/assets/image/mods1.JPG" strength={500}>
+        Content here should I be adding somethin
+        <image href="/src/assets/image/mods2.jpg"></image>
+      </Parallax>
+
+
+
 
 
       <div className="parallax">
@@ -123,7 +132,7 @@ function App() {
           {ProjectVisibility && cards()}
 
           <button onClick={handleClick}>show dialog box
-            <img src="./assets/image/IMG_7525.JPG"></img>
+            <img src="./src/assets/image/IMG_7525.JPG"></img>
           </button>
         </div>
 
