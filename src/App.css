@@ -1,5 +1,5 @@
 html {
-	overflow: auto;
+
 	perspective: 1px;
 	-webkit-perspective: 1px;
 	transform-style: preserve-3d;
@@ -8,11 +8,13 @@ html {
 
 
 
-html, body {
-
+.parallaxbg {
+  background-color: red;
 }
 
-
+.custom-bg {
+  background-color: red;
+}
 
 #PageTitleText {
   -webkit-text-stroke:2px black;
@@ -66,6 +68,7 @@ button {
 
 
 .content {
+	justify-content: center;
 	display: grid;
 	grid: auto / 1fr min(50ch, calc(100% - 64px)) 1fr;
 	background-color: white;
@@ -160,8 +163,7 @@ html, body {
 }
 
 .card-front {
-
-  background: grey;
+background: grey;
 }
 
 
@@ -199,7 +201,7 @@ html, body {
   position: static;  /* or remove position: absolute */
   width: 40vw;
   height: 40vw;
-  border: 1rem solid #000000;
+  border: 1vw solid #000000;
   border-radius: 50%;
   background: white;
   /* Remove the transform and top/left positioning */
@@ -228,21 +230,14 @@ html, body {
 
 
 .circle {
-  overflow: hidden;
-  left: 0;
-  transform: translateX(-25%);
-  align-items: center;
-  text-align: center;
 
-  bottom: 50px;
+  transform: translate(-25%, -0%);
   width: 200vw;
   height: 200vw;
-  background: black;
+  background: white;
   border-radius: 100%;
   border: 5px solid black;
-  z-index: -1;
 
-  margin-bottom: -180vw;
   animation: fade-up 5s;
   
  

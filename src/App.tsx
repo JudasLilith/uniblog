@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from "react";
-import { Parallax } from 'react-parallax';
+import { Parallax, Background } from 'react-parallax';
 import example from './Fuji_apple.jpg';
 
 import './App.css';
@@ -17,7 +17,7 @@ function cards() {
     <>
       <div className='card'>
         <p>A custom PCB Businesscard with NFC tags</p>
-        <img src='./assets/image/IMG_7012.JPG' style={{ width: '200px', height: '200px', objectFit: 'cover' }}></img>
+        <img src='/uniblog/testing.jpg' style={{ width: '200px', height: '200px', objectFit: 'cover' }}></img>
       </div>
       <div className='card'>
         <p>An arduino-Uno based MP3 player</p>
@@ -71,30 +71,37 @@ function App() {
 
   return (
     <div className="App">
-      <img src='/uniblog/testing.jpg' alt="descriptions" />
+
+
 
       <div className='rollingBannerContainer'>
         <div className='rollingBanner'>
-          {[...Array(5)].map((_, i) => (
+          {[...Array(4)].map((_, i) => (
             <div key={i} className='rollingBannerText'>{rollingBannerTextVar}</div>
           ))}
         </div>
       </div>
-      <Parallax bgImage="/src/assets/image/mods1.JPG" strength={500}>
-        Content here should I be adding somethin
-        <img src="/src/assets/image/mods2.jpg"></img>
+
+
+
+
+      <Parallax
+        className='parallaxbg'
+        strength={1000}
+      >
+        <div style={{ height: 750 }} />
+        <Background className="custom-bg">
+          <div className='glow-circle'></div>
+        </Background>
+
       </Parallax>
 
 
+      <div className='content'>
+        <div className="circle" />
 
 
-
-      <div className="parallax">
-        <div className='glow-circle'></div>
-      </div>
-
-
-      <div className="content">
+        <p>writing some shit for the coneten</p>
         <article>
           <p>Asian music covers a vast swath of music cultures surveyed in the articles on Arabia, Central Asia, East Asia, South Asia, and Southeast Asia. Several have traditions reaching into antiquity.</p>
           <p>Chinese classical music, the traditional art or court music of China, has a history stretching over around three thousand years. It has its own unique systems of musical notation, as well as musical tuning and pitch, musical instruments and styles or musical genres. Chinese music is pentatonic-diatonic, having a scale of twelve notes to an octave (5 + 7 = 12) as does European-influenced music.</p>
@@ -103,25 +110,30 @@ function App() {
         <article>
           <p>Asian music covers a vast swath of music cultures surveyed in the articles on Arabia, Central Asia, East Asia, South Asia, and Southeast Asia. Several have traditions reaching into antiquity.</p>
         </article>
+      </div>
 
 
 
-        <div className="TabTitle">
-          <title>something</title>
-        </div>
-
-        <div className="PageTitle">
-          <h1 id="PageTitleText">Howdy there!</h1>
-        </div>
 
 
-        <div className='flexBoxContainer'>
-          {ProjectVisibility && cards()}
 
-          <button onClick={handleClick}>show dialog box
-            <img src="./src/assets/image/IMG_7525.JPG"></img>
-          </button>
-        </div>
+
+      <div className="TabTitle">
+        <title>something</title>
+      </div>
+
+      <div className="PageTitle">
+        <h1 id="PageTitleText">Howdy there!</h1>
+      </div>
+
+
+      <div className='flexBoxContainer'>
+        {ProjectVisibility && cards()}
+
+        <button onClick={handleClick}>show dialog box
+          <img src="./src/assets/image/IMG_7525.JPG"></img>
+        </button>
+
 
 
 
@@ -132,9 +144,6 @@ function App() {
         <div className="bottom">
           <a className="App-link" href="https://judaslilith.com" target="_blank" rel="noopener noreferrer">my other websites:</a>
 
-
-          <div className="circle">
-          </div>
 
         </div>
 

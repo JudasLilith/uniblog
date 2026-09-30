@@ -28,4 +28,4 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap; /* avoids invisible text while font loads */
-}
+ 
