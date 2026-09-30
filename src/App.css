@@ -13,6 +13,7 @@ html {
 }
 
 .custom-bg {
+  align-items: center;
   background-color: red;
 }
 
@@ -136,7 +137,7 @@ html, body {
   width: 200px;
   height: 250px;
   margin: 1rem auto;
-  perspective: 1000px;
+  align-items: center;  perspective: 1000px;
   cursor: pointer;
   transition: transform 0.2s;
 
@@ -198,9 +199,10 @@ background: grey;
 }
 
 .glow-circle {
-  position: static;  /* or remove position: absolute */
-  width: 40vw;
-  height: 40vw;
+  transform: translate(0%, 10%);
+/* or remove position: absolute */
+  width: 40rem;
+  height: 40rem;
   border: 1vw solid #000000;
   border-radius: 50%;
   background: white;
@@ -230,15 +232,15 @@ background: grey;
 
 
 .circle {
-
-  transform: translate(-25%, -0%);
+  align-items: center;
+  transform: translate(-40%, 10%);
   width: 200vw;
   height: 200vw;
   background: white;
   border-radius: 100%;
   border: 5px solid black;
 
-  animation: fade-up 5s;
+
   
  
 }
@@ -246,16 +248,7 @@ background: grey;
 
 
 
-@keyframes pulse-glow {
-  0%, 100% {
-    box-shadow:
-      0 0 1px 1px rgba(255, 255, 255, 0.8),
-      0 0 1px 1px rgba(255, 255, 255, 0.5),
-      0 0 1px 1px rgba(255, 255, 255, 0.25);
-    transform: scale(1);
-  }
 
-}
 
 
 .rollingBannerContainer {
