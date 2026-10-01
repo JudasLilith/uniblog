@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useState } from "react";
 import { Parallax, Background } from 'react-parallax';
 import example from './Fuji_apple.jpg';
 
 import './App.css';
 
-
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -50,6 +50,26 @@ function cards() {
   );
 }
 
+/*
+function UpdateTitle() {
+  let [TITLE, setTITLE] = useState("somethn changed");
+  TITLE = "judaslilith"; 
+  
+  return (
+    <title>{ "somebs" }</title>
+  );
+}
+*/
+
+const TITLE = "working website"
+
+
+const generateRandom = (min:number, max:number) => {
+  const randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+
+};
+
+
 
 
 function App() {
@@ -71,6 +91,9 @@ function App() {
 
   return (
     <div className="App">
+  <Helmet>
+    <title> {TITLE} </title>
+  </Helmet>
 
 
 
@@ -116,9 +139,7 @@ function App() {
       </div>
 
 
-      <div className="TabTitle">
-        <title>something</title>
-      </div>
+
 
       <div className="PageTitle">
         <h1 id="PageTitleText">Howdy there!</h1>
