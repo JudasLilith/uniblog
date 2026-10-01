@@ -64,7 +64,7 @@ function UpdateTitle() {
 const TITLE = "working website"
 
 
-const generateRandom = (min:number, max:number) => {
+const generateRandom = (min: number, max: number) => {
   const randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
 
 };
@@ -91,9 +91,9 @@ function App() {
 
   return (
     <div className="App">
-  <Helmet>
-    <title> {TITLE} </title>
-  </Helmet>
+      <Helmet>
+        <title> {TITLE} </title>
+      </Helmet>
 
 
 
@@ -124,15 +124,14 @@ function App() {
         <div className="circle" >
 
 
-          <p>writing some shit for the conetent n shizzle</p>
-          <article>
-            <p>Asian music covers a vast swath of music cultures surveyed in the articles on Arabia, Central Asia, East Asia, South Asia, and Southeast Asia. Several have traditions reaching into antiquity.</p>
-            <p>Chinese classical music, the traditional art or court music of China, has a history stretching over around three thousand years. It has its own unique systems of musical notation, as well as musical tuning and pitch, musical instruments and styles or musical genres. Chinese music is pentatonic-diatonic, having a scale of twelve notes to an octave (5 + 7 = 12) as does European-influenced music.</p>
-            <p>Knowledge of the biblical period is mostly from literary references in the Bible and post-biblical sources. Religion and music historian Herbert Lockyer, Jr. writes that "music, both vocal and instrumental, was well cultivated among the Hebrews, the New Testament Christians, and the Christian church through the centuries." He adds that "a look at the Old Testament reveals how God's ancient people were devoted to the study and practice of music, which holds a unique place in the historical and prophetic books, as well as the Psalter."</p>
-          </article>
-          <article>
-            <p>Asian music covers a vast swath of music cultures surveyed in the articles on Arabia, Central Asia, East Asia, South Asia, and Southeast Asia. Several have traditions reaching into antiquity.</p>
-          </article>
+
+
+          <p>Asian music covers a vast swath of music cultures surveyed in the articles on Arabia, Central Asia, East Asia, South Asia, and Southeast Asia. Several have traditions reaching into antiquity.</p>
+          <p>Chinese classical music, the traditional art or court music of China, has a history stretching over around three thousand years. It has its own unique systems of musical notation, as well as musical tuning and pitch, musical instruments and styles or musical genres. Chinese music is pentatonic-diatonic, having a scale of twelve notes to an octave (5 + 7 = 12) as does European-influenced music.</p>
+          <p>Knowledge of the biblical period is mostly from literary references in the Bible and post-biblical sources. Religion and music historian Herbert Lockyer, Jr. writes that "music, both vocal and instrumental, was well cultivated among the Hebrews, the New Testament Christians, and the Christian church through the centuries." He adds that "a look at the Old Testament reveals how God's ancient people were devoted to the study and practice of music, which holds a unique place in the historical and prophetic books, as well as the Psalter."</p>
+
+          <p>Asian music covers a vast swath of music cultures surveyed in the articles on Arabia, Central Asia, East Asia, South Asia, and Southeast Asia. Several have traditions reaching into antiquity.</p>
+
         </div>
 
 

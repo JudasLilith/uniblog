@@ -37,7 +37,6 @@ h1 {
 
 p {
   font-family: LongShot;
-  color: black;
   font-size: 1.2rem;
 }
 
@@ -74,13 +73,11 @@ button {
 	justify-content: center;
 	display: grid;
 	grid: auto / 1fr min(50ch, calc(100% - 64px)) 1fr;
-	background-color: white;
-	padding: 2rem 0;
-	z-index: 2;
-	min-height: 200vh; /* ← Force content to be scrollable */
+	background-color: red;/* ← Force content to be scrollable */
 }/* Tell all children of the grid to populate column 2 */
 .content > * {
   grid-column: 2;
+  text-color: yellow;
 }
 
 body {
@@ -234,9 +231,10 @@ background: grey;
   transform: translate(-40%, -10%);
   width: 200vw;
   height: 200vw;
-  background: white;
+  background: black;
   border-radius: 100%;
   border: 5px solid black;
+  text-color: red;
 
  
 }
