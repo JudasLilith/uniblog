@@ -20,9 +20,10 @@ html {
 
 
 .PageTitleText {
-  -webkit-text-stroke:2px white;
+  -webkit-text-stroke:2px blue;
   paint-order: stroke fill;
   font-size: 100px;
+  color:grey;
   font-family: 'BlackMustang';
   filter: drop-shadow(5px 5px 0px black);
 
@@ -32,7 +33,7 @@ html {
 
 
 .spacer {
-  height: 300px;
+  height: 30px;
 }
 
 p {
@@ -74,7 +75,7 @@ button {
 	justify-content: center;
 	display: grid;
 	grid: auto / 1fr min(50ch, calc(100% - 64px)) 1fr;
-	background-color: red;/* ← Force content to be scrollable */
+	background-color: black;/* ← Force content to be scrollable */
 }/* Tell all children of the grid to populate column 2 */
 .content > * {
   grid-column: 2;
@@ -227,14 +228,17 @@ background: grey;
 
 
 .circle {
+  display: flex;
+
   align-items: center;
+  justify-content: center;
   transform: translate(-40%, -10%);
   width: 200vw;
   height: 200vw;
   background: black;
   border-radius: 100%;
   border: 5px solid black;
-  text-color: red;
+
 
  
 }

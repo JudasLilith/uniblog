@@ -115,7 +115,6 @@ function App() {
         <div style={{ height: 1000 }} />
         <Background className="custom-bg">
           <div className='glow-circle'>
-            <p>hello there</p>
           </div>
         </Background>
 
@@ -125,23 +124,20 @@ function App() {
       <div className='content'>
         <div className="circle" >
 
-          <div className='spacer'>
-            <p>I can write shit here son</p>
-          </div>
-
-
-          <h1 className='PageTitleText'>Howdy there!
-            <p>something</p>
-          </h1>
+          <div className='spacer'></div>  
+        <div>
+        <h1 className='PageTitleText'>Howdy there!</h1>
 
 
 
-          <p>Asian music covers a vast swath of music cultures surveyed in the articles on Arabia, Central Asia, East Asia, South Asia, and Southeast Asia. Several have traditions reaching into antiquity.</p>
-          <p>Chinese classical music, the traditional art or court music of China, has a history stretching over around three thousand years. It has its own unique systems of musical notation, as well as musical tuning and pitch, musical instruments and styles or musical genres. Chinese music is pentatonic-diatonic, having a scale of twelve notes to an octave (5 + 7 = 12) as does European-influenced music.</p>
-          <p>Knowledge of the biblical period is mostly from literary references in the Bible and post-biblical sources. Religion and music historian Herbert Lockyer, Jr. writes that "music, both vocal and instrumental, was well cultivated among the Hebrews, the New Testament Christians, and the Christian church through the centuries." He adds that "a look at the Old Testament reveals how God's ancient people were devoted to the study and practice of music, which holds a unique place in the historical and prophetic books, as well as the Psalter."</p>
 
-          <p>Asian music covers a vast swath of music cultures surveyed in the articles on Arabia, Central Asia, East Asia, South Asia, and Southeast Asia. Several have traditions reaching into antiquity.</p>
+          <p>thing is me  talog</p>
+          <p>Asian music covers a vast swath of music cultures surveyed in the articles on Arabi</p>
+          <p>Chi, having a scales does European-influenced music.</p>
+          <p>Knowlter."</p>
 
+          <p>Asian music covers a vast swath of music cultures surveyed in the articles oity.</p>
+</div>
         </div>
 
 
