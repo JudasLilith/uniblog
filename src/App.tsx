@@ -114,7 +114,9 @@ function App() {
       >
         <div style={{ height: 1000 }} />
         <Background className="custom-bg">
-          <div className='glow-circle'></div>
+          <div className='glow-circle'>
+            <p>hello there</p>
+          </div>
         </Background>
 
       </Parallax>
@@ -123,6 +125,14 @@ function App() {
       <div className='content'>
         <div className="circle" >
 
+          <div className='spacer'>
+            <p>I can write shit here son</p>
+          </div>
+
+
+          <h1 className='PageTitleText'>Howdy there!
+            <p>something</p>
+          </h1>
 
 
 
@@ -138,11 +148,6 @@ function App() {
       </div>
 
 
-
-
-      <div className="PageTitle">
-        <h1 id="PageTitleText">Howdy there!</h1>
-      </div>
 
 
       <div className='flexBoxContainer'>

@@ -19,8 +19,8 @@ html {
 
 
 
-#PageTitleText {
-  -webkit-text-stroke:2px black;
+.PageTitleText {
+  -webkit-text-stroke:2px white;
   paint-order: stroke fill;
   font-size: 100px;
   font-family: 'BlackMustang';
@@ -28,16 +28,17 @@ html {
 
 }
 
-h1 {
-  color: white;
+
+
+
+.spacer {
+  height: 300px;
 }
-
-
-
 
 p {
   font-family: LongShot;
-  font-size: 1.2rem;
+  color: yellow;
+
 }
 
 li {
@@ -181,7 +182,6 @@ background: grey;
 
 .PageTitle {
   font-size: 15px;
-  z-index: 2;
 }
 
 .App-link {
