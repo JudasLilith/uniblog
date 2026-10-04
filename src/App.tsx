@@ -1,15 +1,12 @@
 import React, { useEffect } from 'react';
 import { useState } from "react";
 import { Parallax, Background } from 'react-parallax';
-import example from './Fuji_apple.jpg';
-
 import './App.css';
 
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import { useNavigate } from 'react-router-dom';
+import { motion, useScroll, useTransform } from "motion/react";
 
-
-
+import { useRef } from "react";
 
 
 function cards() {
@@ -50,16 +47,7 @@ function cards() {
   );
 }
 
-/*
-function UpdateTitle() {
-  let [TITLE, setTITLE] = useState("somethn changed");
-  TITLE = "judaslilith"; 
-  
-  return (
-    <title>{ "somebs" }</title>
-  );
-}
-*/
+
 
 const TITLE = "working website"
 
@@ -117,44 +105,65 @@ function App() {
           <div className='glow-circle'>
           </div>
         </Background>
-
       </Parallax>
 
 
       <div className='content'>
         <div className="circle" >
-
-          <div className='spacer'></div>  
-        <div>
-        <h1 className='PageTitleText'>Howdy there!</h1>
-
-
-
-
-          <p>thing is me  talog</p>
-          <p>Asian music covers a vast swath of music cultures surveyed in the articles on Arabi</p>
-          <p>Chi, having a scales does European-influenced music.</p>
-          <p>Knowlter."</p>
-
-          <p>Asian music covers a vast swath of music cultures surveyed in the articles oity.</p>
-</div>
+          <div className='spacer' />
         </div>
-
-
       </div>
 
 
 
 
-      <div className='flexBoxContainer'>
-        {ProjectVisibility && cards()}
+      <div className='introContent'>
+        <div className='spacer' style={{ height: '200px' }} />
+        <div className="wave-container">
+          <h2 className="wave-text">
+            <span>H</span><span>O</span><span>W</span><span>D</span><span>Y</span><span>_</span><span>T</span><span>H</span><span>E</span><span>R</span><span>E</span><span>!</span>
+          </h2>
+        </div>
 
-        <button onClick={handleClick}>show dialog box
-          <img src="./src/assets/image/IMG_7525.JPG"></img>
-        </button>
+
+        <div className="reveal">
+          <h3>My name is <b>Peter Seo</b>, and I am an Engineering Student from Texas!</h3>
+          <p>therere faseeeeeeeeeeeeeefasdasdfsaf</p>
+          <p>reeeeeeeeeeeeereeeeeeeereter treterteteete</p>
+        </div>
+
+
+        <div className="reveal">
+          <p>Chi, having a scales does European-influenced music.</p>
+        </div>
+        <div className="reveal">
+          Box 3
+          <p>Knowlter."</p>
+          <p>Asian music covers a vast swath of music cultures surveyed in the articles oity.</p>
+        </div>
+
+        <div className='flexBoxContainer'>
+          {ProjectVisibility && cards()}
+          <button onClick={handleClick}>show dialog box
+            <img src="./src/assets/image/IMG_7525.JPG"></img>
+          </button>
+        </div>
 
 
 
+
+
+
+
+
+
+
+
+        <div className="zoom-wrapper">
+          <div className="zoom-sticky">
+            <img className="zoom-img" src={'uniblog/hikari.svg'} alt="Describe your image" />
+          </div>
+        </div>
 
 
 
@@ -162,8 +171,6 @@ function App() {
 
         <div className="bottom">
           <a className="App-link" href="https://judaslilith.com" target="_blank" rel="noopener noreferrer">my other websites:</a>
-
-
         </div>
 
 
