@@ -19,15 +19,6 @@ html {
 
 
 
-.PageTitleText {
-  -webkit-text-stroke:2px blue;
-  paint-order: stroke fill;
-  font-size: 100px;
-  color:grey;
-  font-family: 'BlackMustang';
-  filter: drop-shadow(5px 5px 0px black);
-
-}
 
 
 
@@ -38,7 +29,9 @@ html {
 
 p {
   font-family: LongShot;
-  color: yellow;
+  color: black;
+  -webkit-text-stroke:2px white;
+  paint-order: stroke fill;
 
 }
 
@@ -50,20 +43,34 @@ li {
 
 
 h3 {
+  color: red;
   font-family: PoisonFreak;
+  -webkit-text-stroke:2px black;
+  paint-order: stroke fill;
+  filter: drop-shadow(2px 2px 0px black);
+
 }
 
 
 
 button {
+
   font-family: KingThings;
   border: 12px solid #333;
   overflow: hidden;
   z-index: 2;
+  border: 5px solid black;
+  outline: 1px solid red;
 }
 
 
-
+img {
+  display: block;
+  width: 100%;               /* fits inside the face, not a fixed 200px */
+  max-width: 100%;
+  height:140px;/* lets a flex child shrink below its image height */
+  object-fit: cover;
+}
 
 
 
@@ -95,61 +102,52 @@ html, body {
  overflow-x: clip;
 }
 
-
-
-
-
-
-
-
 .card {
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  background-color: grey;
-  border: 1px solid #333;
-  border-radius: 3px;
-  padding: 8px 12px;
-  min-width: 0;
-  height: 300px;
-  z-index: 2;
   width: 200px;
-  height: 250px;
-  margin: 1rem auto;
-  align-items: center;  
-  perspective: 1000px;
-  cursor: pointer;
-  transition: transform 0.2s;
-
-
+  height: 300px;
+  margin: 10px;
+  perspective: 800px;
 }
 
-.card:hover {
-  background-color: white;
-  color: black;
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.2s;
+}
+
+.card:hover .card-inner {
   transform: rotateY(180deg);
 }
 
-
+.card-front,
 .card-back {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
+  inset: 0;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
-  background: grey;
-  color: grey;
-
-
+  justify-content: center;
+  text-align: center;
+  padding: 8px 12px;
+  margin: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border: 5px solid black;
+  outline: 3px solid red;
 }
 
 .card-front {
-background: grey;
+  background: red;
+  color: black;
 }
 
-
-
+.card-back {
+  background: white;
+  color: white;
+  transform: rotateY(180deg);
+}
 
 
 .App-header {
@@ -204,6 +202,11 @@ background: grey;
 
 
 .flexBoxContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   
 }
 
@@ -233,6 +236,7 @@ background: grey;
 
 .introContent {
   background: black;
+  align-items:center;
 }
 
 
@@ -271,7 +275,7 @@ background: grey;
 
 @keyframes zoom {
   from { transform: scale(1.0); }
-  to   { transform: scale(200.5); }
+  to   { transform: scale(2.5); }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -330,11 +334,12 @@ background: grey;
 }
 
 .wave-container {
-  margin: 5%;
+  margin: 2%;
+  padding: 0 3% 0 1%; 
   width: fit-content;
   max-width: 90%;
-  transform: translate(0%,0%);
-  border: 5px solid red;
+  border: 5px solid black;
+  outline: 1px solid red;
   background: red;
   color: white;
 
@@ -362,13 +367,10 @@ background: grey;
   background: red;
   color: white;
   text-align: center;
-  border: 5px solid red;
+  border: 2px solid red;
   box-shadow:
     10px 10px 0 0 black,     /* shadow fill, no blur */
     10px 10px 0 3px red;
-
-
-
 
   transition:
     translate 0.1s cubic-bezier(0.22, 1, 0.36, 1),
@@ -383,11 +385,6 @@ background: grey;
     0px 0px 0 0px red;
   border: 5px solid red;
   translate: 10px 10px;
-}
-
-@keyframes revealhover {
-  to {
-}
 }
 
 
@@ -417,7 +414,7 @@ background: grey;
   @keyframes reveal {
     to {
       opacity: 1;
-      transform: translateY(0);
+      transform: translate(0,0);
     }
   }
 }

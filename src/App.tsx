@@ -12,36 +12,77 @@ import { useRef } from "react";
 function cards() {
   return (
     <>
-      <div className='card'>
-        <p>A custom PCB Businesscard with NFC tags</p>
-        <img src='/uniblog/testing.jpg' style={{ width: '200px', height: '200px', objectFit: 'cover' }}></img>
+      <div className="card">
+        <div className="card-inner">
+          <div className="card-front">
+            <p>A custom PCB Businesscard with NFC tags</p>
+            <img src="/uniblog/testing.jpg" alt="PCB business card" className="card-img" />
+          </div>
+          <div className="card-back">Back side</div>
+        </div>
       </div>
-      <div className='card'>
-        <p>An arduino-Uno based MP3 player</p>
+
+      <div className="card">
+        <div className="card-inner">
+          <div className="card-front"><p>An arduino-Uno based MP3 player</p></div>
+          <div className="card-back">Back side</div>
+        </div>
       </div>
-      <div className='card'>
-        <p>ESP32-controlled Home Assistant Power manager</p>
+
+      <div className="card">
+        <div className="card-inner">
+          <div className="card-front"><p>ESP32-controlled Home Assistant Power manager</p></div>
+          <div className="card-back">Back side</div>
+        </div>
       </div>
-      <div className='card'>
-        <p>A voltage multiplier circuit made with a 555 timer</p>
+
+      <div className="card">
+        <div className="card-inner">
+          <div className="card-front"><p>A voltage multiplier circuit made with a 555 timer</p></div>
+          <div className="card-back">Back side</div>
+        </div>
       </div>
-      <div className='card'>
-        <p>Pac-Blood</p>
+
+      <div className="card">
+        <div className="card-inner">
+          <div className="card-front"><p>Pac-Blood</p></div>
+          <div className="card-back">Back side</div>
+        </div>
       </div>
-      <div className='card'>
-        <p>Electric wheelchair with facial recognition</p>
+
+      <div className="card">
+        <div className="card-inner">
+          <div className="card-front"><p>Electric wheelchair with facial recognition</p></div>
+          <div className="card-back">Back side</div>
+        </div>
       </div>
-      <div className='card'>
-        <p>full electronics workbench</p>
+
+      <div className="card">
+        <div className="card-inner">
+          <div className="card-front"><p>full electronics workbench</p></div>
+          <div className="card-back">Back side</div>
+        </div>
       </div>
-      <div className='card'>
-        <p>Refurbished Brother AX350 electric typewriter </p>
+
+      <div className="card">
+        <div className="card-inner">
+          <div className="card-front"><p>Refurbished Brother AX350 electric typewriter</p></div>
+          <div className="card-back">Back side</div>
+        </div>
       </div>
-      <div className='card'>
-        <p>Go-Kart motor with throttle</p>
+
+      <div className="card">
+        <div className="card-inner">
+          <div className="card-front"><p>Go-Kart motor with throttle</p></div>
+          <div className="card-back">Back side</div>
+        </div>
       </div>
-      <div className='card'>
-        <p>CLI tool for checking 3d Printer connection</p>
+
+      <div className="card">
+        <div className="card-inner">
+          <div className="card-front"><p>CLI tool for checking 3d Printer connection</p></div>
+          <div className="card-back">Back side</div>
+        </div>
       </div>
     </>
   );
@@ -142,11 +183,11 @@ function App() {
           <p>Asian music covers a vast swath of music cultures surveyed in the articles oity.</p>
         </div>
 
+
+
+        <button onClick={handleClick}>show dialog box<img src="uniblog/tesng.jpg"></img></button>
         <div className='flexBoxContainer'>
           {ProjectVisibility && cards()}
-          <button onClick={handleClick}>show dialog box
-            <img src="./src/assets/image/IMG_7525.JPG"></img>
-          </button>
         </div>
 
 
