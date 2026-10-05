@@ -168,7 +168,7 @@ function App() {
 
 
         <div className="reveal">
-          <h3>My name is <b>Peter Seo</b>, and I am an Engineering Student from Texas!</h3>
+          <h3>My NAME IS <b>Peter Seo</b>, and I am an Engineering Student from Texas!                     t4rrehg</h3>
           <p>therere faseeeeeeeeeeeeeefasdasdfsaf</p>
           <p>reeeeeeeeeeeeereeeeeeeereter treterteteete</p>
         </div>

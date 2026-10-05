@@ -44,7 +44,7 @@ li {
 
 h3 {
   color: red;
-  font-family: PoisonFreak;
+  font-family: WolfenStein;
   -webkit-text-stroke:2px black;
   paint-order: stroke fill;
   filter: drop-shadow(2px 2px 0px black);
@@ -57,7 +57,9 @@ button {
 
   font-family: KingThings;
   border: 12px solid #333;
-  overflow: hidden;
+  width: 100px;
+  height: 200px;
+
   z-index: 2;
   border: 5px solid black;
   outline: 1px solid red;
@@ -83,8 +85,6 @@ img {
 body {
 	width: 100vw;
 	min-height: 100vh;  /* Add minimum height */
-	overflow-x: hidden;
-	overflow-y: auto;
 	perspective: 1px;
 	-webkit-perspective: 1px;
 	transform-style: preserve-3d;
@@ -148,7 +148,6 @@ html, body {
   color: white;
   transform: rotateY(180deg);
 }
-
 
 .App-header {
   min-height: 100vh;
@@ -236,59 +235,31 @@ html, body {
 
 .introContent {
   background: black;
+  display:grid;
   align-items:center;
+  justify-content: center;
 }
 
 
-
-
-
-
-.zoom-wrapper {
-  height: 250vh;                 /* scroll distance of the effect */
-  view-timeline-name: --zoom;    /* timeline tied to the wrapper */
-  view-timeline-axis: block;
+.wave-container {
+  margin: 20vh auto;
+  padding: 0 3% 0 1%; 
+  width: fit-content;
+  max-width: 90%;
+  min-width:0;
+  border: 5px solid black;
+  outline: 1px solid red;
+  background: red;
+  color: white;
 }
-
-.zoom-sticky {
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.zoom-img {
-  transform: translate(20%,-5%);
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform-origin: center;
-}
-
-@supports (animation-timeline: view()) {
-  .zoom-img {
-    animation: zoom linear both;
-    animation-timeline: --zoom;
-    animation-range: cover 100vh cover calc(100% - 100vh);
-  }
-}
-
-@keyframes zoom {
-  from { transform: scale(1.0); }
-  to   { transform: scale(2.5); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .zoom-img { animation: none; }
-}
-
 
 .wave-text span {
   margin: 0;
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: normal;
   -webkit-text-stroke:2px white;
   paint-order: stroke fill;
-  font-size: 100px;
+  font-size: clamp(32px, 12vw, 100px);
   color:black;
   font-family: 'BlackMustang';
   filter: drop-shadow(5px 5px 0px black);
@@ -333,37 +304,25 @@ html, body {
     animation-delay: 2.2s;
 }
 
-.wave-container {
-  margin: 2%;
-  padding: 0 3% 0 1%; 
-  width: fit-content;
-  max-width: 90%;
-  border: 5px solid black;
-  outline: 1px solid red;
-  background: red;
-  color: white;
 
-
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-0.3em);
+    }
 }
 
-
-
-
-
-
-
-.actualContent {
-  color: black;
-}
 
 
 
 
 
 .reveal {
+  width: 80vw;
+  max-width:1000px;
   margin: 3rem auto;
-  width: min(90%, 500px);
-
   background: red;
   color: white;
   text-align: center;
@@ -378,6 +337,15 @@ html, body {
     box-shadow 0.1s ease;
 }
 
+@media (max-width: 600px) {
+  .reveal {
+    width: auto !important;     /* or 100% with padding, depending on the look you want */
+    margin-left: 20px !important;
+    margin-right: 20px !important;  
+    overflow: hidden;
+    overflow-wrap: anywhere;
+  }
+}
 .reveal:hover {
   background: red;
   box-shadow:
@@ -403,7 +371,7 @@ html, body {
   }
   .wave-container {
     opacity: 0;
-    transform: translateY(60px);
+
     animation: reveal linear both;
     animation-timeline: view();
     /* start when the element enters the viewport,
@@ -417,17 +385,6 @@ html, body {
       transform: translate(0,0);
     }
   }
-}
-
-
-
-@keyframes wave {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
 }
 
 
@@ -474,6 +431,54 @@ html, body {
 }
 
 
+.zoom-wrapper {
+  height: 250vh;                 /* scroll distance of the effect */
+  view-timeline-name: --zoom;    /* timeline tied to the wrapper */
+  view-timeline-axis: block;
+}
+
+.zoom-sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.zoom-img {
+  transform: translate(20%,-5%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform-origin: center;
+}
+
+@supports (animation-timeline: view()) {
+  .zoom-img {
+    animation: zoom linear both;
+    animation-timeline: --zoom;
+    animation-range: cover 100vh cover calc(100% - 100vh);
+  }
+}
+
+@keyframes zoom {
+  from { transform: scale(1.0); }
+  to   { transform: scale(2.5); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .zoom-img { animation: none; }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -513,6 +518,14 @@ html, body {
 @font-face {
   font-family: 'PoisonFreak';
   src: url('../public/fonts/PoisonFreak-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* avoids invisible text while font loads */
+}
+
+@font-face {
+  font-family: 'WolfenStein';
+  src: url('../public/fonts/wolfenstein.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap; /* avoids invisible text while font loads */
