@@ -4,7 +4,7 @@ import { Parallax, Background } from 'react-parallax';
 import './App.css';
 
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import { motion, useScroll, useTransform } from "motion/react";
+
 
 import { useRef } from "react";
 
@@ -168,19 +168,24 @@ function App() {
 
 
         <div className="reveal">
-          <h3>My NAME IS <b>Peter Seo</b>, and I am an Engineering Student from Texas!                     t4rrehg</h3>
-          <p>therere faseeeeeeeeeeeeeefasdasdfsaf</p>
-          <p>reeeeeeeeeeeeereeeeeeeereter treterteteete</p>
+          <h3>My NAME IS <b>Peter Seo</b>, and I am an Engineering Student from Texas!</h3>
+          <p>I like: </p>
+          <li>Working on my Klipper setup</li>
+          <li>Gardening(Especially)</li>
+          <li>Top 3 distros are Arch, Fedora, and Hannah Montana</li>
+          <p>I</p>
         </div>
 
 
         <div className="reveal">
-          <p>Chi, having a scales does European-influenced music.</p>
+          <h3>making on the </h3>
+          <p>Making the </p>
         </div>
         <div className="reveal">
           Box 3
           <p>Knowlter."</p>
           <p>Asian music covers a vast swath of music cultures surveyed in the articles oity.</p>
+          <a href="https://axia.sh"/> 
         </div>
 
 

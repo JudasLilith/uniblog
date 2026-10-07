@@ -8,6 +8,56 @@ html {
 
 
 
+
+p {
+  font-family: LongShot;
+  color: black;
+  -webkit-text-stroke:2px white;
+  paint-order: stroke fill;
+
+}
+
+li {
+  color: white;
+  font-size: 1.2rem;
+}
+
+
+
+h3 {
+  color: White;
+  font-size: 2rem;
+  font-family: LongShot;
+  -webkit-text-stroke:2px black;
+  paint-order: stroke fill;
+  filter: drop-shadow(2px 2px 0px black);
+
+}
+
+
+
+button {
+
+  font-family: KingThings;
+  border: 12px solid #333;
+  width: 100px;
+  height: 200px;
+
+
+  border: 5px solid black;
+  outline: 1px solid red;
+}
+
+
+img {
+  display: block;
+  width: 100%;               /* fits inside the face, not a fixed 200px */
+  max-width: 100%;
+  height:140px;/* lets a flex child shrink below its image height */
+  object-fit: cover;
+}
+
+
 .parallaxbg {
   display: flex;
   flex-direction: column;
@@ -26,55 +76,6 @@ html {
 .spacer {
   height: 30px;
 }
-
-p {
-  font-family: LongShot;
-  color: black;
-  -webkit-text-stroke:2px white;
-  paint-order: stroke fill;
-
-}
-
-li {
-  color: white;
-  font-size: 1.2rem;
-}
-
-
-
-h3 {
-  color: red;
-  font-family: WolfenStein;
-  -webkit-text-stroke:2px black;
-  paint-order: stroke fill;
-  filter: drop-shadow(2px 2px 0px black);
-
-}
-
-
-
-button {
-
-  font-family: KingThings;
-  border: 12px solid #333;
-  width: 100px;
-  height: 200px;
-
-  z-index: 2;
-  border: 5px solid black;
-  outline: 1px solid red;
-}
-
-
-img {
-  display: block;
-  width: 100%;               /* fits inside the face, not a fixed 200px */
-  max-width: 100%;
-  height:140px;/* lets a flex child shrink below its image height */
-  object-fit: cover;
-}
-
-
 
 .content {
   display: grid;
@@ -342,8 +343,6 @@ html, body {
     width: auto !important;     /* or 100% with padding, depending on the look you want */
     margin-left: 20px !important;
     margin-right: 20px !important;  
-    overflow: hidden;
-    overflow-wrap: anywhere;
   }
 }
 .reveal:hover {
@@ -365,8 +364,6 @@ html, body {
     transform: translate(100px,60px);
     animation: reveal linear both;
     animation-timeline: view();
-    /* start when the element enters the viewport,
-       finish when it's 40% of the way in */
     animation-range: entry 50% entry 100%;
   }
   .wave-container {
