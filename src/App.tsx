@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { useState } from "react";
 import { Parallax, Background } from 'react-parallax';
 import './App.css';
-
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 
@@ -15,81 +14,125 @@ function cards() {
       <div className="card">
         <div className="card-inner">
           <div className="card-front">
-            <p>A custom PCB Businesscard with NFC tags</p>
-            <img src="/uniblog/testing.jpg" alt="PCB business card" className="card-img" />
+
+            <img src="/uniblog/BusinessCard.png" alt="PCB business card" className="card-img" />
           </div>
+          <div className="card-back">
+            <h5>A custom PCB Businesscard with NFC tags</h5>
+          </div>
+        </div>
+      </div>
+
+      <div className="card">
+        <div className="card-inner">
+          <div className="card-front">
+            <img src="/uniblog/fallout_zine_MP3Player.png" alt="PCB business card" className="card-img" />
+          </div>
+          <div className="card-back"><h5>An arduino-Uno based MP3 player</h5></div>
+        </div>
+      </div>
+
+      <div className="card">
+        <div className="card-inner">
+          <div className="card-front">
+            <img src="/uniblog/ESPCord.PNG" alt="PCB business card" className="card-img" />
+          </div>
+          <div className="card-back"> <h5>ESP32-controlled Home Assistant Power manager</h5></div>
+        </div>
+      </div>
+
+      <div className="card">
+        <div className="card-inner">
+          <div className="card-front"><h5>A voltage multiplier circuit made with a 555 timer</h5></div>
           <div className="card-back">Back side</div>
         </div>
       </div>
 
       <div className="card">
         <div className="card-inner">
-          <div className="card-front"><p>An arduino-Uno based MP3 player</p></div>
+          <div className="card-front">
+            <img src="/uniblog/PacBlood.png" alt="PCB business card" className="card-img" />
+
+          </div>
+          <div className="card-back"><h5>A Pac-Man inspired retro game</h5></div>
+        </div>
+      </div>
+
+      <div className="card">
+        <div className="card-inner">
+          <div className="card-front">
+            <img src="/uniblog/modsZine.png" alt="PCB business card" className="card-img" />
+
+          </div>
+          <div className="card-back">
+            <h5>Electric wheelchair with facial recognition</h5>
+          </div>
+        </div>
+      </div>
+
+      <div className="card">
+        <div className="card-inner">
+          <div className="card-front"><h5>full electronics workbench</h5></div>
           <div className="card-back">Back side</div>
         </div>
       </div>
 
       <div className="card">
         <div className="card-inner">
-          <div className="card-front"><p>ESP32-controlled Home Assistant Power manager</p></div>
+          <div className="card-front"><h5>Refurbished Brother AX350 electric typewriter</h5></div>
           <div className="card-back">Back side</div>
         </div>
       </div>
 
       <div className="card">
         <div className="card-inner">
-          <div className="card-front"><p>A voltage multiplier circuit made with a 555 timer</p></div>
+          <div className="card-front"><h5>Go-Kart motor with throttle</h5></div>
           <div className="card-back">Back side</div>
         </div>
       </div>
 
       <div className="card">
         <div className="card-inner">
-          <div className="card-front"><p>Pac-Blood</p></div>
-          <div className="card-back">Back side</div>
+          <div className="card-front">
+            <img src="/uniblog/zine.png" alt="PCB business card" className="card-img" />
+          </div>
+          <div className="card-back">            <h5>CLI tool for checking 3d Printer connection</h5></div>
         </div>
       </div>
 
       <div className="card">
         <div className="card-inner">
-          <div className="card-front"><p>Electric wheelchair with facial recognition</p></div>
-          <div className="card-back">Back side</div>
+          <div className="card-front">
+            <img src="/uniblog/MacroPad.JPG" alt="PCB business card" className="card-img" />
+          </div>
+          <div className="card-back">            <h5>MacroPad for Godot</h5></div>
         </div>
       </div>
 
-      <div className="card">
-        <div className="card-inner">
-          <div className="card-front"><p>full electronics workbench</p></div>
-          <div className="card-back">Back side</div>
-        </div>
-      </div>
-
-      <div className="card">
-        <div className="card-inner">
-          <div className="card-front"><p>Refurbished Brother AX350 electric typewriter</p></div>
-          <div className="card-back">Back side</div>
-        </div>
-      </div>
-
-      <div className="card">
-        <div className="card-inner">
-          <div className="card-front"><p>Go-Kart motor with throttle</p></div>
-          <div className="card-back">Back side</div>
-        </div>
-      </div>
-
-      <div className="card">
-        <div className="card-inner">
-          <div className="card-front"><p>CLI tool for checking 3d Printer connection</p></div>
-          <div className="card-back">Back side</div>
-        </div>
-      </div>
     </>
   );
 }
 
+type HoverLettersProps = {
+  text: string;
+  className?: string;
+};
 
-
+function HoverLetters({ text, className = "" }: HoverLettersProps) {
+  return (
+    <h3 className={`letters ${className}`} aria-label={text}>
+      {Array.from(text).map((ch, i) =>
+        ch === " " ? (
+          " "
+        ) : (
+          <span key={i} aria-hidden="true">
+            {ch}
+          </span>
+        )
+      )}
+    </h3>
+  );
+}
 const TITLE = "working website"
 
 
@@ -171,26 +214,46 @@ function App() {
           <h3>My NAME IS <b>Peter Seo</b>, and I am an Engineering Student from Texas!</h3>
           <p>I like: </p>
           <li>Working on my Klipper setup</li>
-          <li>Gardening(Especially)</li>
+          <li>Gardening(Especially herbs and flowers)</li>
           <li>Top 3 distros are Arch, Fedora, and Hannah Montana</li>
           <p>I</p>
         </div>
 
 
+
         <div className="reveal">
-          <h3>making on the </h3>
-          <p>Making the </p>
+          <h3>Favorite Media</h3>
+          <p>Movies </p>
+          <li>Forrest Gump</li>
+          <li>Any Stanley Kubrick (especially Full Metal Jacket and Clockwork Orange)</li>
+          <li>Rocky 4</li>
+          <li>Every single Goddamn Ghibli movie except Spirited Away( The Heron, The Wind Rises, Nausicaä, Laputa, and Mononoke Hime)</li>
+          <p>Games</p>
+          <li>Wolfenstein-New Colossus</li>
+          <li>Team Fortress 2</li>
+          <li>Cataclysm: Dark Days Ahead</li>
+          <li>Red Alert 3 (We miss you Tim Curry)</li>
+          <li>StarCraft II</li>
+          <li>CyberPunk 2077</li>
+          <p>Music</p>
+          <li>Black Sabbath - The Wizard, War Pigs</li>
+          <li>Sex Pistols - No Fun</li>
+          <li>Sir Chloe - Walk You Home</li>
+          <li>Elvis - Blue Suede Shoes, If I Can Dream</li>
+          <li>Dazey and the Scouts - Wet</li>
+          <li>The Adicts - What Am I To Do</li>
         </div>
         <div className="reveal">
-          Box 3
-          <p>Knowlter."</p>
-          <p>Asian music covers a vast swath of music cultures surveyed in the articles oity.</p>
-          <a href="https://axia.sh"/> 
+
+          <h6>Here are some projects I've done over the years:</h6>
+
         </div>
 
 
+        <button onClick={handleClick}>
+          <HoverLetters text="Click Me!" />
+        </button>
 
-        <button onClick={handleClick}>show dialog box<img src="uniblog/tesng.jpg"></img></button>
         <div className='flexBoxContainer'>
           {ProjectVisibility && cards()}
         </div>
@@ -205,20 +268,17 @@ function App() {
 
 
 
-        <div className="zoom-wrapper">
-          <div className="zoom-sticky">
-            <img className="zoom-img" src={'uniblog/hikari.svg'} alt="Describe your image" />
-          </div>
-        </div>
-
-
-
-
+        <div className="spacer" style={{ height: '200px' }} />
 
         <div className="bottom">
-          <a className="App-link" href="https://judaslilith.com" target="_blank" rel="noopener noreferrer">my other websites:</a>
-        </div>
 
+          <p>Other Links:</p>
+          <a href="https://judaslilith.com" target="_blank" rel="noopener noreferrer"><b>outdated_website</b></a>
+          <a href="https://github.com/JudasLilith" target="_blank" rel="noopener noreferrer"><b>GitHub</b></a>
+          <a href="https://codeberg.org/JudasLilith" target="_blank" rel="noopener noreferrer"><b>CodeBerg(not used as much)</b></a>
+
+        </div>
+        <div className="spacer" style={{ height: '100px' }} />
 
 
       </div>
