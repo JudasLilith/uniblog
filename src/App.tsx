@@ -143,7 +143,7 @@ function cards() {
             <img src="/uniblog/OctoPrint.JPG" alt="PCB business card" className="card-img" />
           </div>
           <div className="card-back">
-            <h5>Octoprint Setup with DIY-runout Sensor</h5>
+            <h5>Drunk Driver Simulator</h5>
           </div>
         </div>
       </div>

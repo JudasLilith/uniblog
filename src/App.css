@@ -255,7 +255,8 @@ img {
 
 .introContent {
   background: black;
-  display:grid;
+  display:flex;
+  flex-direction: column;
   align-items:center;
   justify-content: center;
 }
@@ -342,7 +343,7 @@ img {
 .reveal {
   width: 80vw;
   max-width:1000px;
-  margin: 3rem auto;
+  margin: auto auto 3rem;
   background: red;
   color: white;
   padding: 1rem;
@@ -356,14 +357,6 @@ img {
     translate 0.1s cubic-bezier(0.22, 1, 0.36, 1),
     background 0.1s ease,
     box-shadow 0.1s ease;
-}
-
-@media (max-width: 600px) {
-  .reveal {
-    width: 40% !important;     /* or 100% with padding, depending on the look you want */
-    margin-left: 20px !important;
-    margin-right: 20px !important;  
-  }
 }
 
 
@@ -398,7 +391,10 @@ button {
   height: 200px;
   border: 5px solid black;
   outline: 1px solid red;
-
+  box-shadow:
+    5px 5px 0 0 red,     /* shadow fill, no blur */
+    5px 5px 0 5px black;
+  border: 5px solid red;
 
 
 
@@ -407,14 +403,6 @@ button {
   padding: 1rem;
 
   border: 2px solid red;
-
-
-
-
-
-
-
-
 
 
 }
@@ -446,9 +434,10 @@ button {
   }
 
   .reveal {
-    opacity: 1;
-    transform: translate(100px,60px);
+    opacity: 0;
+    transform: translate(100px,90px);
     animation: reveal linear both;
+
     animation-timeline: view();
     animation-range: entry 50% entry 100%;
   }
@@ -517,7 +506,7 @@ h6 {
   flex-direction: row;
   align-items: center;
   justify-content:center;
-  gap: 1rem;
+  gap: 5rem;
 }
 
 .bottom > div {
