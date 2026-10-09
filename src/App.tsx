@@ -96,9 +96,59 @@ function cards() {
           <div className="card-front">
             <img src="/uniblog/zine.png" alt="PCB business card" className="card-img" />
           </div>
-          <div className="card-back">            <h5>CLI tool for checking 3d Printer connection</h5></div>
+          <div className="card-back">
+            <h5>CLI tool for checking 3d Printer connection</h5></div>
         </div>
       </div>
+
+
+      <div className="card">
+        <div className="card-inner">
+          <div className="card-front">
+
+            <img src="/uniblog/BusinessCard.png" alt="PCB business card" className="card-img" />
+          </div>
+          <div className="card-back">
+            <h5> 2 feet 3D printed Crossbow</h5>
+          </div>
+        </div>
+      </div>
+
+      <div className="card">
+        <div className="card-inner">
+          <div className="card-front">
+
+            <img src="/uniblog/breathalyzer.png" alt="PCB business card" className="card-img" />
+          </div>
+          <div className="card-back">
+            <h5>DIY Breathalyzer</h5>
+          </div>
+        </div>
+      </div>
+
+      <div className="card">
+        <div className="card-inner">
+          <div className="card-front">
+            <img src="/uniblog/OctoPrint.JPG" alt="PCB business card" className="card-img" />
+          </div>
+          <div className="card-back">
+            <h5>Octoprint Setup with DIY-runout Sensor</h5>
+          </div>
+        </div>
+      </div>
+
+      <div className="card">
+        <div className="card-inner">
+          <div className="card-front">
+            <img src="/uniblog/OctoPrint.JPG" alt="PCB business card" className="card-img" />
+          </div>
+          <div className="card-back">
+            <h5>Octoprint Setup with DIY-runout Sensor</h5>
+          </div>
+        </div>
+      </div>
+
+
 
       <div className="card">
         <div className="card-inner">
