@@ -41,12 +41,17 @@ function cards() {
         </div>
       </div>
 
+
       <div className="card">
         <div className="card-inner">
-          <div className="card-front"><h5>A voltage multiplier circuit made with a 555 timer</h5></div>
-          <div className="card-back">Back side</div>
+          <div className="card-front">
+            <img src="/uniblog/voltage.png" alt="PCB business card" className="card-img" />
+          </div>
+          <div className="card-back"> <h5>A voltage multiplier circuit made with a 555 timer</h5></div>
         </div>
       </div>
+
+
 
       <div className="card">
         <div className="card-inner">
@@ -62,7 +67,6 @@ function cards() {
         <div className="card-inner">
           <div className="card-front">
             <img src="/uniblog/modsZine.png" alt="PCB business card" className="card-img" />
-
           </div>
           <div className="card-back">
             <h5>Electric wheelchair with facial recognition</h5>
@@ -72,24 +76,107 @@ function cards() {
 
       <div className="card">
         <div className="card-inner">
-          <div className="card-front"><h5>full electronics workbench</h5></div>
-          <div className="card-back">Back side</div>
+          <div className="card-front">
+            <img src="/uniblog/bench.png" alt="PCB business card" className="card-img" />
+          </div>
+          <div className="card-back">
+            <h5>Electronics Workbench</h5>
+          </div>
         </div>
       </div>
 
-      <div className="card">
-        <div className="card-inner">
-          <div className="card-front"><h5>Refurbished Brother AX350 electric typewriter</h5></div>
-          <div className="card-back">Back side</div>
-        </div>
-      </div>
+
+
 
       <div className="card">
         <div className="card-inner">
-          <div className="card-front"><h5>Go-Kart motor with throttle</h5></div>
-          <div className="card-back">Back side</div>
+          <div className="card-front">
+            <img src="/uniblog/bench.png" alt="PCB business card" className="card-img" />
+          </div>
+          <div className="card-back">
+            <h5>Custom CAD Model Importer </h5>
+          </div>
         </div>
       </div>
+
+
+
+      <div className="card">
+        <div className="card-inner">
+          <div className="card-front">
+            <img src="/uniblog/bench.png" alt="PCB business card" className="card-img" />
+          </div>
+          <div className="card-back">
+            <h5>Completely 3D printed Crossbow </h5>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div className="card">
+        <div className="card-inner">
+          <div className="card-front">
+            <img src="/uniblog/bench.png" alt="PCB business card" className="card-img" />
+          </div>
+          <div className="card-back">
+            <h5>Klipper firmware upgrade on Anycubic I3 Mega S</h5>
+          </div>
+        </div>
+      </div>
+
+
+      <div className="card">
+        <div className="card-inner">
+          <div className="card-front">
+            <img src="/uniblog/bench.png" alt="PCB business card" className="card-img" />
+          </div>
+          <div className="card-back">
+            <h5>Completely 3D printed Crossbow </h5>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div className="card">
+        <div className="card-inner">
+          <div className="card-front">
+            <img src="/uniblog/brother3.png" alt="PCB business card" className="card-img" />
+          </div>
+          <div className="card-back">
+            <h5>Refurbished Brother AX350 electric typewriter</h5>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <div className="card">
+        <div className="card-inner">
+          <div className="card-front">
+            <img src="/uniblog/gokart.png" alt="PCB business card" className="card-img" />
+          </div>
+          <div className="card-back">
+            <h5>Go-Kart motor with throttle</h5>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
 
       <div className="card">
         <div className="card-inner">
@@ -140,7 +227,7 @@ function cards() {
       <div className="card">
         <div className="card-inner">
           <div className="card-front">
-            <img src="/uniblog/OctoPrint.JPG" alt="PCB business card" className="card-img" />
+            <img src="/uniblog/deadbeat.png" alt="PCB business card" className="card-img" />
           </div>
           <div className="card-back">
             <h5>Drunk Driver Simulator</h5>
