@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/uniblog/static/css/main.f855e6bc.css",
-    "main.js": "/uniblog/static/js/main.d6100b60.js",
-    "static/js/453.9b115ec2.chunk.js": "/uniblog/static/js/453.9b115ec2.chunk.js",
-    "static/media/logo.svg": "/uniblog/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/uniblog/static/css/main.bd4b44fc.css",
+    "main.js": "/uniblog/static/js/main.573b28a3.js",
+    "static/js/453.30dc89d6.chunk.js": "/uniblog/static/js/453.30dc89d6.chunk.js",
+    "static/media/OldLondon.ttf": "/uniblog/static/media/OldLondon.a67214b49bb04c352ce8.ttf",
+    "static/media/Long_Shot.ttf": "/uniblog/static/media/Long_Shot.9694bd4e4048f4282260.ttf",
+    "static/media/Kingthings Spike.ttf": "/uniblog/static/media/Kingthings Spike.aafff75e06ad4069c9b8.ttf",
+    "static/media/PoisonFreak-Regular.ttf": "/uniblog/static/media/PoisonFreak-Regular.ea1d575979b3011c78be.ttf",
+    "static/media/Black Mustang.ttf": "/uniblog/static/media/Black Mustang.62b544515d5d6b6c5388.ttf",
+    "static/media/wolfenstein.ttf": "/uniblog/static/media/wolfenstein.b3ee25e84fb3a3edcd3b.ttf",
     "index.html": "/uniblog/index.html",
-    "main.f855e6bc.css.map": "/uniblog/static/css/main.f855e6bc.css.map",
-    "main.d6100b60.js.map": "/uniblog/static/js/main.d6100b60.js.map",
-    "453.9b115ec2.chunk.js.map": "/uniblog/static/js/453.9b115ec2.chunk.js.map"
+    "main.bd4b44fc.css.map": "/uniblog/static/css/main.bd4b44fc.css.map",
+    "main.573b28a3.js.map": "/uniblog/static/js/main.573b28a3.js.map",
+    "453.30dc89d6.chunk.js.map": "/uniblog/static/js/453.30dc89d6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.d6100b60.js"
+    "static/css/main.bd4b44fc.css",
+    "static/js/main.573b28a3.js"
   ]
 }
