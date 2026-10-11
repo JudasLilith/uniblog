@@ -18,7 +18,10 @@ function cards() {
             <img src="/uniblog/BusinessCard.png" alt="PCB business card" className="card-img" />
           </div>
           <div className="card-back">
-            <h5>A custom PCB Businesscard with NFC tags</h5>
+            <h5>Custom PCB Businesscard with NFC tags</h5>
+            <a href="https://github.com/JudasLilith/BusinessCard" target="_blank" rel="noopener noreferrer"><b>Link</b></a>
+
+
           </div>
         </div>
       </div>
@@ -28,7 +31,9 @@ function cards() {
           <div className="card-front">
             <img src="/uniblog/fallout_zine_MP3Player.png" alt="PCB business card" className="card-img" />
           </div>
-          <div className="card-back"><h5>An arduino-Uno based MP3 player</h5></div>
+          <div className="card-back"><h5>Arduino-Uno based MP3 player</h5>
+            <a href="https://github.com/JudasLilith/MP3Player" target="_blank" rel="noopener noreferrer"><b>Link</b></a>
+          </div>
         </div>
       </div>
 
@@ -37,7 +42,9 @@ function cards() {
           <div className="card-front">
             <img src="/uniblog/ESPCord.PNG" alt="PCB business card" className="card-img" />
           </div>
-          <div className="card-back"> <h5>ESP32-controlled Home Assistant Power manager</h5></div>
+          <div className="card-back"> <h5>ESP32-controlled Home Assistant Power manager</h5>
+            <a href="https://github.com/JudasLilith/ESPCord" target="_blank" rel="noopener noreferrer"><b>Link</b></a>
+          </div>
         </div>
       </div>
 
@@ -47,7 +54,9 @@ function cards() {
           <div className="card-front">
             <img src="/uniblog/voltage.png" alt="PCB business card" className="card-img" />
           </div>
-          <div className="card-back"> <h5>A voltage multiplier circuit made with a 555 timer</h5></div>
+          <div className="card-back"> <h5>Voltage multiplier circuit made with a 555 timer</h5>
+            <a href="https://github.com/JudasLilith/FalloutCard" target="_blank" rel="noopener noreferrer"><b>Link</b></a>
+          </div>
         </div>
       </div>
 
@@ -59,7 +68,9 @@ function cards() {
             <img src="/uniblog/PacBlood.png" alt="PCB business card" className="card-img" />
 
           </div>
-          <div className="card-back"><h5>A Pac-Man inspired retro game</h5></div>
+          <div className="card-back"><h5> Pac-Man inspired retro game</h5>
+            <a href="https://github.com/JudasLilith/TSA-Project" target="_blank" rel="noopener noreferrer"><b>Link</b></a>
+          </div>
         </div>
       </div>
 
@@ -69,7 +80,8 @@ function cards() {
             <img src="/uniblog/modsZine.png" alt="PCB business card" className="card-img" />
           </div>
           <div className="card-back">
-            <h5>Electric wheelchair with facial recognition</h5>
+            <h5>Electric wheelchair with facial recognition and crossbow turret</h5>
+            <a href="https://github.com/juhapark21/Fallout" target="_blank" rel="noopener noreferrer"><b>Link</b></a>
           </div>
         </div>
       </div>
@@ -80,7 +92,7 @@ function cards() {
             <img src="/uniblog/bench.png" alt="PCB business card" className="card-img" />
           </div>
           <div className="card-back">
-            <h5>Electronics Workbench</h5>
+            <h5>Electronics and tool Workbench</h5>
           </div>
         </div>
       </div>
@@ -91,10 +103,12 @@ function cards() {
       <div className="card">
         <div className="card-inner">
           <div className="card-front">
-            <img src="/uniblog/bench.png" alt="PCB business card" className="card-img" />
+            <img src="/uniblog/lupin4.png" alt="PCB business card" className="card-img" />
+            <img src="/uniblog/lupinNormalinverted.png" alt="PCB business card" className="card-img" />
           </div>
           <div className="card-back">
-            <h5>Custom CAD Model Importer </h5>
+            <h5>CAD Model Importer for McMaster, GrabCAD and Misumi</h5>
+            <a href="https://github.com/JudasLilith/lupin4" target="_blank" rel="noopener noreferrer"><b>Link</b></a>
           </div>
         </div>
       </div>
@@ -104,10 +118,13 @@ function cards() {
       <div className="card">
         <div className="card-inner">
           <div className="card-front">
-            <img src="/uniblog/bench.png" alt="PCB business card" className="card-img" />
+            <img src="/uniblog/skull.png" alt="PCB business card" className="card-img" />
+            <img src="/uniblog/quickskull.png" alt="PCB business card" className="card-img" />
           </div>
           <div className="card-back">
-            <h5>Completely 3D printed Crossbow </h5>
+            <h5>Skull Gaming Cyberdeck</h5>
+            <a href="https://cad.onshape.com/documents/f1aa0a3a7b4374997dd55df6/w/a944fa475a3193ec97faba3c/e/8ddd5b1495066512f0165f7d?renderMode=0&uiState=6acba908e207aef228742a68" target="_blank" rel="noopener noreferrer"><b>Link</b></a>
+
           </div>
         </div>
       </div>
@@ -117,10 +134,10 @@ function cards() {
       <div className="card">
         <div className="card-inner">
           <div className="card-front">
-            <img src="/uniblog/bench.png" alt="PCB business card" className="card-img" />
+            <img src="/uniblog/klipper.jpg" alt="PCB business card" className="card-img" />
           </div>
           <div className="card-back">
-            <h5>Klipper firmware upgrade on Anycubic I3 Mega S</h5>
+            <h5>Klipper upgrade on Anycubic I3 Mega S + various Mods</h5>
           </div>
         </div>
       </div>
@@ -129,13 +146,29 @@ function cards() {
       <div className="card">
         <div className="card-inner">
           <div className="card-front">
-            <img src="/uniblog/bench.png" alt="PCB business card" className="card-img" />
+            <img src="/uniblog/crossbow.jpg" alt="PCB business card" className="card-img" />
+            <img src="/uniblog/goodcrossbow.gif" alt="PCB business card" className="card-img" />
           </div>
           <div className="card-back">
-            <h5>Completely 3D printed Crossbow </h5>
+            <h5>3D printed Crossbow for 7.5 inch crossbow bolts</h5>
+            <a href="https://github.com/JudasLilith/Cassidy" target="_blank" rel="noopener noreferrer"><b>Link</b></a>
           </div>
         </div>
       </div>
+
+      <div className="card">
+        <div className="card-inner">
+          <div className="card-front">
+            <img src="/uniblog/RubeGoldberg.png" alt="PCB business card" className="card-img" />
+            <img src="/uniblog/rube.png" alt="PCB business card" className="card-img" />
+          </div>
+          <div className="card-back">
+            <h5>Rube Goldberg Machine</h5>
+          </div>
+        </div>
+      </div>
+
+
 
 
 
@@ -145,6 +178,7 @@ function cards() {
         <div className="card-inner">
           <div className="card-front">
             <img src="/uniblog/brother3.png" alt="PCB business card" className="card-img" />
+            <img src="/uniblog/typewriterfinished.jpg" alt="PCB business card" className="card-img" />
           </div>
           <div className="card-back">
             <h5>Refurbished Brother AX350 electric typewriter</h5>
@@ -162,9 +196,11 @@ function cards() {
         <div className="card-inner">
           <div className="card-front">
             <img src="/uniblog/gokart.png" alt="PCB business card" className="card-img" />
+            <img src="/uniblog/motor.jpg" alt="PCB business card" className="card-img" />
+
           </div>
           <div className="card-back">
-            <h5>Go-Kart motor with throttle</h5>
+            <h5>Go-Kart motor testing rig with throttle</h5>
           </div>
         </div>
       </div>
@@ -184,7 +220,9 @@ function cards() {
             <img src="/uniblog/zine.png" alt="PCB business card" className="card-img" />
           </div>
           <div className="card-back">
-            <h5>CLI tool for checking 3d Printer connection</h5></div>
+            <h5>CLI tool for checking 3d Printer connection</h5>
+            <a href="https://github.com/JudasLilith/PrinterConnection" target="_blank" rel="noopener noreferrer"><b>Link</b></a>
+          </div>
         </div>
       </div>
 
@@ -192,11 +230,11 @@ function cards() {
       <div className="card">
         <div className="card-inner">
           <div className="card-front">
-
-            <img src="/uniblog/BusinessCard.png" alt="PCB business card" className="card-img" />
+            <img src="/uniblog/esp32testing2.JPG" alt="PCB business card" className="card-img" />
+            <img src="/uniblog/testingesp32.png" alt="PCB business card" className="card-img" />
           </div>
           <div className="card-back">
-            <h5> 2 feet 3D printed Crossbow</h5>
+            <h5> ESP32 CAN Data transfer Testing Rig</h5>
           </div>
         </div>
       </div>
@@ -231,6 +269,7 @@ function cards() {
           </div>
           <div className="card-back">
             <h5>Drunk Driver Simulator</h5>
+            <a href="https://Git/JudasLilith" target="_blank" rel="noopener noreferrer"><b>Link</b></a>
           </div>
         </div>
       </div>
@@ -242,7 +281,10 @@ function cards() {
           <div className="card-front">
             <img src="/uniblog/MacroPad.JPG" alt="PCB business card" className="card-img" />
           </div>
-          <div className="card-back">            <h5>MacroPad for Godot</h5></div>
+          <div className="card-back">            <h5>MacroPad for Godot</h5>
+            <a href="https://codeberg.org/JudasLilith" target="_blank" rel="noopener noreferrer"><b>Link</b></a>
+
+          </div>
         </div>
       </div>
 
@@ -299,7 +341,28 @@ function App() {
 
 
   return (
+
+
+
     <div className="App">
+
+
+
+      <head>
+        <link rel="icon" href="uniblog/MoonLogo.png" />
+        <title>Your Custom Website Title</title>
+      </head>
+
+
+
+
+
+
+
+
+
+
+
       <Helmet>
         <title> {TITLE} </title>
       </Helmet>
@@ -348,12 +411,18 @@ function App() {
 
 
         <div className="reveal">
-          <h3>My NAME IS <b>Peter Seo</b>, and I am an Engineering Student from Texas!</h3>
-          <p>I like: </p>
-          <li>Working on my Klipper setup</li>
-          <li>Gardening(Especially herbs and flowers)</li>
-          <li>Top 3 distros are Arch, Fedora, and Hannah Montana</li>
-          <p>I</p>
+          <HoverLetters text='My name is Peter, and I am an Engineering Student from Texas!' />
+
+          <HoverLetters text="I like to:" />
+          <li>Design PCBs</li>
+          <li>Blacksmith Jewelry</li>
+          <li>CNC Routing & Mill Machining for FRC</li>
+          <li>CAD on FreeCAD or SolidWorks</li>
+          <li>Work on my Klipper setup</li>
+          <li>Gardening(Especially lavender, tomatoes and mints)</li>
+          <li>Top 3 distros are Arch, Fedora, and Nix</li>
+
+
         </div>
 
 
@@ -372,6 +441,7 @@ function App() {
           <li>Red Alert 3 (We miss you Tim Curry)</li>
           <li>StarCraft II</li>
           <li>CyberPunk 2077</li>
+          <li>DOOM</li>
           <p>Music</p>
           <li>Black Sabbath - The Wizard, War Pigs</li>
           <li>Sex Pistols - No Fun</li>
@@ -381,8 +451,8 @@ function App() {
           <li>The Adicts - What Am I To Do</li>
         </div>
         <div className="reveal">
-
-          <h6>Here are some projects I've done over the years:</h6>
+          <HoverLetters text="Here are some projects I've done over the years:" />
+          <h6></h6>
 
         </div>
 
