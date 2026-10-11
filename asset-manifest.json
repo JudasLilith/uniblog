@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.339ecb2b.css",
-    "main.js": "./static/js/main.2fbb2570.js",
+    "main.css": "./static/css/main.2ee0e29d.css",
+    "main.js": "./static/js/main.1a50a47c.js",
     "static/js/453.30dc89d6.chunk.js": "./static/js/453.30dc89d6.chunk.js",
     "static/media/OldLondon.ttf": "./static/media/OldLondon.a67214b49bb04c352ce8.ttf",
     "static/media/Long_Shot.ttf": "./static/media/Long_Shot.9694bd4e4048f4282260.ttf",
@@ -10,12 +10,12 @@
     "static/media/Black Mustang.ttf": "./static/media/Black Mustang.62b544515d5d6b6c5388.ttf",
     "static/media/wolfenstein.ttf": "./static/media/wolfenstein.b3ee25e84fb3a3edcd3b.ttf",
     "index.html": "./index.html",
-    "main.339ecb2b.css.map": "./static/css/main.339ecb2b.css.map",
-    "main.2fbb2570.js.map": "./static/js/main.2fbb2570.js.map",
+    "main.2ee0e29d.css.map": "./static/css/main.2ee0e29d.css.map",
+    "main.1a50a47c.js.map": "./static/js/main.1a50a47c.js.map",
     "453.30dc89d6.chunk.js.map": "./static/js/453.30dc89d6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.339ecb2b.css",
-    "static/js/main.2fbb2570.js"
+    "static/css/main.2ee0e29d.css",
+    "static/js/main.1a50a47c.js"
   ]
 }
