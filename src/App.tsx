@@ -15,7 +15,7 @@ function cards() {
         <div className="card-inner">
           <div className="card-front">
 
-            <img src="/uniblog/BusinessCard.png" alt="PCB business card" className="card-img" />
+            <img src="BusinessCard.png" alt="PCB business card" className="card-img" />
           </div>
           <div className="card-back">
             <h5>Custom PCB Businesscard with NFC tags</h5>
@@ -29,7 +29,7 @@ function cards() {
       <div className="card">
         <div className="card-inner">
           <div className="card-front">
-            <img src="/uniblog/fallout_zine_MP3Player.png" alt="PCB business card" className="card-img" />
+            <img src="fallout_zine_MP3Player.png" alt="PCB business card" className="card-img" />
           </div>
           <div className="card-back"><h5>Arduino-Uno based MP3 player</h5>
             <a href="https://github.com/JudasLilith/MP3Player" target="_blank" rel="noopener noreferrer"><b>Link</b></a>
@@ -40,7 +40,7 @@ function cards() {
       <div className="card">
         <div className="card-inner">
           <div className="card-front">
-            <img src="/uniblog/ESPCord.PNG" alt="PCB business card" className="card-img" />
+            <img src="ESPCord.PNG" alt="PCB business card" className="card-img" />
           </div>
           <div className="card-back"> <h5>ESP32-controlled Home Assistant Power manager</h5>
             <a href="https://github.com/JudasLilith/ESPCord" target="_blank" rel="noopener noreferrer"><b>Link</b></a>
@@ -52,7 +52,7 @@ function cards() {
       <div className="card">
         <div className="card-inner">
           <div className="card-front">
-            <img src="/uniblog/voltage.png" alt="PCB business card" className="card-img" />
+            <img src="voltage.png" alt="PCB business card" className="card-img" />
           </div>
           <div className="card-back"> <h5>Voltage multiplier circuit made with a 555 timer</h5>
             <a href="https://github.com/JudasLilith/FalloutCard" target="_blank" rel="noopener noreferrer"><b>Link</b></a>
@@ -65,7 +65,7 @@ function cards() {
       <div className="card">
         <div className="card-inner">
           <div className="card-front">
-            <img src="/uniblog/PacBlood.png" alt="PCB business card" className="card-img" />
+            <img src="PacBlood.png" alt="PCB business card" className="card-img" />
 
           </div>
           <div className="card-back"><h5> Pac-Man inspired retro game</h5>
@@ -77,7 +77,7 @@ function cards() {
       <div className="card">
         <div className="card-inner">
           <div className="card-front">
-            <img src="/uniblog/modsZine.png" alt="PCB business card" className="card-img" />
+            <img src="modsZine.png" alt="PCB business card" className="card-img" />
           </div>
           <div className="card-back">
             <h5>Electric wheelchair with facial recognition and crossbow turret</h5>
@@ -89,7 +89,7 @@ function cards() {
       <div className="card">
         <div className="card-inner">
           <div className="card-front">
-            <img src="/uniblog/bench.png" alt="PCB business card" className="card-img" />
+            <img src="bench.png" alt="PCB business card" className="card-img" />
           </div>
           <div className="card-back">
             <h5>Electronics and tool Workbench</h5>
@@ -103,8 +103,8 @@ function cards() {
       <div className="card">
         <div className="card-inner">
           <div className="card-front">
-            <img src="/uniblog/lupin4.png" alt="PCB business card" className="card-img" />
-            <img src="/uniblog/lupinNormalinverted.png" alt="PCB business card" className="card-img" />
+            <img src="lupin4.png" alt="PCB business card" className="card-img" />
+            <img src="lupinNormalinverted.png" alt="PCB business card" className="card-img" />
           </div>
           <div className="card-back">
             <h5>CAD Model Importer for McMaster, GrabCAD and Misumi</h5>
@@ -118,8 +118,8 @@ function cards() {
       <div className="card">
         <div className="card-inner">
           <div className="card-front">
-            <img src="/uniblog/skull.png" alt="PCB business card" className="card-img" />
-            <img src="/uniblog/quickskull.png" alt="PCB business card" className="card-img" />
+            <img src="skull.png" alt="PCB business card" className="card-img" />
+            <img src="quickskull.png" alt="PCB business card" className="card-img" />
           </div>
           <div className="card-back">
             <h5>Skull Gaming Cyberdeck</h5>
@@ -134,7 +134,7 @@ function cards() {
       <div className="card">
         <div className="card-inner">
           <div className="card-front">
-            <img src="/uniblog/klipper.jpg" alt="PCB business card" className="card-img" />
+            <img src="klipper.jpg" alt="PCB business card" className="card-img" />
           </div>
           <div className="card-back">
             <h5>Klipper upgrade on Anycubic I3 Mega S + various Mods</h5>
@@ -146,8 +146,8 @@ function cards() {
       <div className="card">
         <div className="card-inner">
           <div className="card-front">
-            <img src="/uniblog/crossbow.jpg" alt="PCB business card" className="card-img" />
-            <img src="/uniblog/goodcrossbow.gif" alt="PCB business card" className="card-img" />
+            <img src="crossbow.jpg" alt="PCB business card" className="card-img" />
+            <img src="goodcrossbow.gif" alt="PCB business card" className="card-img" />
           </div>
           <div className="card-back">
             <h5>3D printed Crossbow for 7.5 inch crossbow bolts</h5>
@@ -159,8 +159,8 @@ function cards() {
       <div className="card">
         <div className="card-inner">
           <div className="card-front">
-            <img src="/uniblog/RubeGoldberg.png" alt="PCB business card" className="card-img" />
-            <img src="/uniblog/rube.png" alt="PCB business card" className="card-img" />
+            <img src="RubeGoldberg.png" alt="PCB business card" className="card-img" />
+            <img src="rube.png" alt="PCB business card" className="card-img" />
           </div>
           <div className="card-back">
             <h5>Rube Goldberg Machine</h5>
@@ -177,8 +177,8 @@ function cards() {
       <div className="card">
         <div className="card-inner">
           <div className="card-front">
-            <img src="/uniblog/brother3.png" alt="PCB business card" className="card-img" />
-            <img src="/uniblog/typewriterfinished.jpg" alt="PCB business card" className="card-img" />
+            <img src="brother3.png" alt="PCB business card" className="card-img" />
+            <img src="typewriterfinished.jpg" alt="PCB business card" className="card-img" />
           </div>
           <div className="card-back">
             <h5>Refurbished Brother AX350 electric typewriter</h5>
@@ -195,8 +195,8 @@ function cards() {
       <div className="card">
         <div className="card-inner">
           <div className="card-front">
-            <img src="/uniblog/gokart.png" alt="PCB business card" className="card-img" />
-            <img src="/uniblog/motor.jpg" alt="PCB business card" className="card-img" />
+            <img src="gokart.png" alt="PCB business card" className="card-img" />
+            <img src="motor.jpg" alt="PCB business card" className="card-img" />
 
           </div>
           <div className="card-back">
@@ -217,7 +217,7 @@ function cards() {
       <div className="card">
         <div className="card-inner">
           <div className="card-front">
-            <img src="/uniblog/zine.png" alt="PCB business card" className="card-img" />
+            <img src="zine.png" alt="PCB business card" className="card-img" />
           </div>
           <div className="card-back">
             <h5>CLI tool for checking 3d Printer connection</h5>
@@ -230,8 +230,8 @@ function cards() {
       <div className="card">
         <div className="card-inner">
           <div className="card-front">
-            <img src="/uniblog/esp32testing2.JPG" alt="PCB business card" className="card-img" />
-            <img src="/uniblog/testingesp32.png" alt="PCB business card" className="card-img" />
+            <img src="esp32testing2.JPG" alt="PCB business card" className="card-img" />
+            <img src="testingesp32.png" alt="PCB business card" className="card-img" />
           </div>
           <div className="card-back">
             <h5> ESP32 CAN Data transfer Testing Rig</h5>
@@ -243,7 +243,7 @@ function cards() {
         <div className="card-inner">
           <div className="card-front">
 
-            <img src="/uniblog/breathalyzer.png" alt="PCB business card" className="card-img" />
+            <img src="breathalyzer.png" alt="PCB business card" className="card-img" />
           </div>
           <div className="card-back">
             <h5>DIY Breathalyzer</h5>
@@ -254,7 +254,7 @@ function cards() {
       <div className="card">
         <div className="card-inner">
           <div className="card-front">
-            <img src="/uniblog/OctoPrint.JPG" alt="PCB business card" className="card-img" />
+            <img src="OctoPrint.JPG" alt="PCB business card" className="card-img" />
           </div>
           <div className="card-back">
             <h5>Octoprint Setup with DIY-runout Sensor</h5>
@@ -265,7 +265,7 @@ function cards() {
       <div className="card">
         <div className="card-inner">
           <div className="card-front">
-            <img src="/uniblog/deadbeat.png" alt="PCB business card" className="card-img" />
+            <img src="deadbeat.png" alt="PCB business card" className="card-img" />
           </div>
           <div className="card-back">
             <h5>Drunk Driver Simulator</h5>
@@ -279,7 +279,7 @@ function cards() {
       <div className="card">
         <div className="card-inner">
           <div className="card-front">
-            <img src="/uniblog/MacroPad.JPG" alt="PCB business card" className="card-img" />
+            <img src="MacroPad.JPG" alt="PCB business card" className="card-img" />
           </div>
           <div className="card-back">            <h5>MacroPad for Godot</h5>
             <a href="https://codeberg.org/JudasLilith" target="_blank" rel="noopener noreferrer"><b>Link</b></a>
@@ -388,6 +388,17 @@ function App() {
         <Background className="custom-bg">
           <div className='glow-circle'>
           </div>
+
+
+          <img src="bg1.png" alt="" className="scatter s1" />
+          <img src="bg2.png" alt="" className="scatter s2" />
+          <img src="bg3.png" alt="" className="scatter s3" />
+          <img src="bg4.png" alt="" className="scatter s4" />
+          <img src="bg5.png" alt="" className="scatter s5" />
+          <img src="bg6.png" alt="" className="scatter s6" />
+          <img src="bg7.png" alt="" className="scatter s7" />
+          <img src="bg8.png" alt="" className="scatter s8" />
+
         </Background>
       </Parallax>
 

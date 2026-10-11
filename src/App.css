@@ -171,14 +171,41 @@ img {
 }
 
 
+.pic {
+  z-index:-3;
+  transform: translate( 100px, 200px );
+  width: auto;
+  length: auto;
+}
 
+.custom-bg {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  min-height: 100vh;
+   /* keeps scattered images from causing scrollbars */
+}
 
+.scatter {
+  position: absolute;
+  width: 160px;
+  height: auto;
+  border: 4px solid black;
+  object-fit: cover;
+  z-index: 0;            /* behind the circle */
+}
 
+.s1 { top: 5%;    left: -60%;   transform: rotate(-6deg); width: 250px; }
+.s2 { top: 55%;   left: -50%;   transform: rotate(6deg); width: 200px; }
+.s3 { top: -0%;   right: 5%;  transform: rotate(9deg);  width: 150px; }
+.s4 { bottom: 10%; right: 9%;  transform: rotate(-25deg); width: 200px; }
 
-
-
-
-
+.s5 { top: 5%;    left: -10%;   transform: rotate(-6deg); }
+.s6 { top: 40%;   left: -20%;   transform: rotate(-10deg); width: 200px; }
+.s7 { top: 10%;   right: -30%;  transform: rotate(30deg);  width: 150px; }
+.s8 { bottom: 14%; right: -70%;  transform: rotate(-5deg); width: 200px; }
 
 .App-header {
   min-height: 100vh;
@@ -437,30 +464,32 @@ button {
 @supports (animation-timeline: view()) {
 
   .button {
-    opacity: 1;
-    transform: translate(100px,60px);
-    animation: reveal linear both;
+    animation-name: reveal;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
     animation-timeline: view();
     animation-range: entry 50% entry 100%;
+    opacity: 1;
+    transform: translate(100px, 60px);
+  }
+
+  .reveal,
+  .wave-container {
+    animation-name: reveal;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-timeline: view();
+    animation-range: entry 50% entry 100%;
+    opacity: 0;
   }
 
   .reveal {
-    opacity: 0;
-    transform: translate(100px,90px);
-    animation: reveal linear both;
-
-    animation-timeline: view();
-    animation-range: entry 50% entry 100%;
+    transform: translate(100px, 90px);
   }
-  .wave-container {
-    opacity: 0;
 
-    animation: reveal linear both;
-    animation-timeline: view();
-    /* start when the element enters the viewport,
-       finish when it's 40% of the way in */
-    animation-range: entry 50% entry 100%;
-  }
+
+}
+
 
   @keyframes reveal {
     to {
@@ -468,7 +497,8 @@ button {
       transform: translate(0,0);
     }
   }
-}
+
+
 
 
 h6 {
