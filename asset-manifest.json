@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/uniblog/static/css/main.56e41780.css",
+    "main.css": "/uniblog/static/css/main.6b64e17f.css",
     "main.js": "/uniblog/static/js/main.573b28a3.js",
     "static/js/453.30dc89d6.chunk.js": "/uniblog/static/js/453.30dc89d6.chunk.js",
     "static/media/OldLondon.ttf": "/uniblog/static/media/OldLondon.a67214b49bb04c352ce8.ttf",
@@ -10,12 +10,12 @@
     "static/media/Black Mustang.ttf": "/uniblog/static/media/Black Mustang.62b544515d5d6b6c5388.ttf",
     "static/media/wolfenstein.ttf": "/uniblog/static/media/wolfenstein.b3ee25e84fb3a3edcd3b.ttf",
     "index.html": "/uniblog/index.html",
-    "main.56e41780.css.map": "/uniblog/static/css/main.56e41780.css.map",
+    "main.6b64e17f.css.map": "/uniblog/static/css/main.6b64e17f.css.map",
     "main.573b28a3.js.map": "/uniblog/static/js/main.573b28a3.js.map",
     "453.30dc89d6.chunk.js.map": "/uniblog/static/js/453.30dc89d6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.56e41780.css",
+    "static/css/main.6b64e17f.css",
     "static/js/main.573b28a3.js"
   ]
 }
