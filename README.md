@@ -1,12 +1,12 @@
 ## My Personal Blog
 
-![Pasted image 20261018164448.png](<Pasted\ image\ 20261018164448.png>)
+![Pasted image 20261018164448.png](20261018164448.png)
 
 Since Senior year started, I was planning on remaking my personal website again.
 
 I decided to use React this time, due to its high usage in the developer space, and I learned a lot more(despite taking a lot longer to finish than expected) by having this hands on experience with the framework.
 I think it definitely came out a lot better than my previous one, and the hosting is on a github pages server, so it might be a lot more slower on new devices that go to the website.
-![Pasted image 20261018164509.png](<Pasted\ image\ 20261018164509.png>)
+![Pasted image 20261018164509.png](20261018164509.png)
 Not a lot of javascript was used, but it still would be necessary to run this program locally.
 
 ### software used
@@ -23,8 +23,8 @@ Not a lot of javascript was used, but it still would be necessary to run this pr
   <b>Editing:</b>
 - neovim(very well supported)
 
-![Pasted image 20261018164036.png](<./Pasted\ image\ 20261018164036.png>)
-![Pasted image 20261018164036.png](<./Pasted\ image\ 20261018164048.png>)
+![Pasted image 20261018164036.png](20261018164036.png)
+![Pasted image 20261018164036.png](20261018164048.png)
 
 ### How to run locally
 
