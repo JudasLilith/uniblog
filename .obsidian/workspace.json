@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "text/College Essay fallout.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "College Essay fallout"
+              "title": "README"
             }
           }
         ]
@@ -80,7 +80,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "0951b70d3f4466da",
@@ -188,11 +189,16 @@
   },
   "active": "fa34505ecce64d91",
   "lastOpenFiles": [
-    "src/App.tsx~",
-    "src/App.css~",
+    "Pasted image 20261018164509.png",
+    "Pasted image 20261018164448.png",
+    "Pasted image 20261018164048.png",
+    "Pasted image 20261018164036.png",
+    "Design Philosophy.md",
+    "README.md",
     "text/essays.md",
     "text/College Essay fallout.md",
-    "Design Philosophy.md",
+    "src/App.tsx~",
+    "src/App.css~",
     "text/UCB.md",
     "text/Writing ideas.md",
     "text/notes/ACT/ACT Science(New3)",
