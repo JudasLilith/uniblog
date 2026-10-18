@@ -419,6 +419,15 @@ function App() {
             <span>H</span><span>O</span><span>W</span><span>D</span><span>Y</span><span>_</span><span>T</span><span>H</span><span>E</span><span>R</span><span>E</span><span>!</span>
           </h2>
         </div>
+        <button onClick={handleClick}>
+          <HoverLetters text="Click Me to see my projects!" />
+        </button>
+
+        <div className='flexBoxContainer'>
+          {ProjectVisibility && cards()}
+        </div>
+
+        <div className='spacer' style={{ height: '200px' }} />
 
 
         <div className="reveal">
@@ -462,18 +471,15 @@ function App() {
           <li>The Adicts - What Am I To Do</li>
         </div>
         <div className="reveal">
-          <HoverLetters text="Here are some projects I've done over the years:" />
-          <h6></h6>
+          <HoverLetters text="Why is your name and website like this?" />
+          <p>I got the inspo for designing this website from one of my favorite card games: Go-Stop. It's a Korean game where families play together, and was derived from the
+            Japanese game Koi-Koi. The cards used in these games are called Hanafuda(literally translating to "flower cards") in Japanese and Hwatu(translating
+            directly to "flower fight") in Korean, and they are used to play a variety of other games. There are no numbers, but each 4 cards with similar characteristics
+            represent the 12 months in a year.
+          </p>
+          <p></p>
+          <p>My nickname "JudasLilith" was made when I was little, when my favorite band was Judas Priest and I just finished watching Neon Genesis Evangelion. My favorite Disciple was Lilith, and I put the two and two together for my username.</p>
 
-        </div>
-
-
-        <button onClick={handleClick}>
-          <HoverLetters text="Click Me!" />
-        </button>
-
-        <div className='flexBoxContainer'>
-          {ProjectVisibility && cards()}
         </div>
 
 

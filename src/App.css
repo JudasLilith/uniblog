@@ -10,8 +10,9 @@ html {
 
 
 p {
-  font-family: LongShot;
+  font-family: PoisonFreak;
   color: black;
+  font-size: 30px;
   -webkit-text-stroke:2px white;
   paint-order: stroke fill;
 
@@ -50,7 +51,7 @@ h3 {
   align-items: center;
 
   justify-content: center;
-  background-color: red;
+  background-color: green;
 }
 
 
@@ -425,7 +426,7 @@ img {
 button {
   font-family: KingThings;
   border: 12px solid #333;
-  width: 400px;
+  width: 500px;
   height: 200px;
   border: 5px solid black;
   outline: 1px solid red;
